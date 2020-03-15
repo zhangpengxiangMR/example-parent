@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-example-one" />
         <module name="spring-boot-example-two" />
+        <module name="spring-example" />
+        <module name="spring-mvc-example" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +18,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-example-one" options="-parameters" />
       <module name="spring-boot-example-two" options="-parameters" />
+      <module name="spring-example" options="" />
+      <module name="spring-mvc-example" options="" />
     </option>
   </component>
 </project>

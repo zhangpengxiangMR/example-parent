@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            https://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/aop
+            https://www.springframework.org/schema/aop/spring-aop.xsd
+            http://www.springframework.org/schema/context
+            https://www.springframework.org/schema/context/spring-context.xsd
+            http://www.springframework.org/schema/lang
+            https://www.springframework.org/schema/lang/spring-lang.xsd">
+
+    <!--自动扫描context:component-scan将包中所有类进行扫描，如果该类同时添加了@Component，则将该类扫描到Ioc容器中，即Ioc管理它的对象 -->
+    <context:component-scan base-package="com.pykj.example"></context:component-scan>
+    <!--让Aspect注解生效，让Spring框架结合切面类和目标类，自动生成代理对象-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+   <!-- <bean id="student" class="com.pykj.example.entity.Student">
+        <property name="id" value="1"></property>
+        <property name="name" value="李四"></property>
+        <property name="age" value="18"></property>
+        <property name="address" ref="address"></property>
+        <property name="hobbyList">
+            <list>
+                <ref bean="hobby"></ref>
+                <ref bean="hobby1"></ref>
+            </list>
+        </property>
+    </bean>-->
+
+    <!--<bean id="student2" class="com.pykj.example.entity.Student">
+        <property name="id" value="1"></property>
+        <property name="name" value="李四"></property>
+        <property name="age" value="18"></property>
+        <property name="address" ref="address"></property>
+    </bean>
+
+    <bean id="student3" class="com.pykj.example.entity.Student" parent="student2">
+        <property name="id" value="10000"></property>
+    </bean>-->
+
+   <!-- <bean id="student3" class="com.pykj.example.entity.Student">
+        <constructor-arg index="0" value="100"></constructor-arg>
+        <constructor-arg name="name" value="李四100"></constructor-arg>
+        <constructor-arg value="18100"></constructor-arg>
+        <constructor-arg ref="address"></constructor-arg>
+    </bean>-->
+
+   <!-- <bean id="address" class="com.pykj.example.entity.Address">
+        <property name="id" value="1"></property>
+        <property name="name" value="百沙路"></property>
+    </bean>-->
+
+    <!--<bean name="hobby" class="com.pykj.example.entity.Hobby">
+        <property name="id" value="1"></property>
+        <property name="name" value="篮球"></property>
+    </bean>
+    <bean name="hobby1" class="com.pykj.example.entity.Hobby">
+        <property name="id" value="2"></property>
+        <property name="name" value="足球"></property>
+    </bean>-->
+
+
+    <!--<bean id="student" class="com.pykj.example.entity.Student" p:id="10000" p:name="马六" p:age="18"
+          p:address-ref="address" p:hobbyList-ref="hobby"/>
+
+    <bean id="address" class="com.pykj.example.entity.Address">
+        <property name="id" value="1"></property>
+        <property name="name" value="百沙路"></property>
+    </bean>
+
+    <bean name="hobby" class="com.pykj.example.entity.Hobby">
+        <property name="id" value="1"></property>
+        <property name="name" value="篮球"></property>
+    </bean>
+    <bean name="hobby1" class="com.pykj.example.entity.Hobby">
+        <property name="id" value="2"></property>
+        <property name="name" value="足球"></property>
+    </bean>-->
+</beans>

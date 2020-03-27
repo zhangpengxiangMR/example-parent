@@ -27,4 +27,31 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
+    <!--配置自定义转换器-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <list>
+                <bean class="com.pykj.exemple.converter.DataConverter">
+                    <constructor-arg type="java.lang.String" value="yyyy-MM-dd"></constructor-arg>
+                </bean>
+                <bean class="com.pykj.exemple.converter.StudentConverter"></bean>
+            </list>
+        </property>
+    </bean>
+
+    <mvc:annotation-driven conversion-service="conversionService">
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <property name="supportedMediaTypes" value="text/html;charset=UTF-8"></property>
+            </bean>
+            <!--配置fastjson-->
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter4"></bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+    </bean>
+
+
 </beans>

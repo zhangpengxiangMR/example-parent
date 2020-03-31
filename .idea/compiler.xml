@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-example-one" />
+        <module name="spring-mybatis-example" />
         <module name="spring-boot-example-two" />
         <module name="spring-example" />
         <module name="spring-mvc-example" />
@@ -21,6 +22,7 @@
       <module name="spring-boot-example-two" options="-parameters" />
       <module name="spring-example" options="" />
       <module name="spring-mvc-example" options="" />
+      <module name="spring-mybatis-example" options="" />
     </option>
   </component>
 </project>

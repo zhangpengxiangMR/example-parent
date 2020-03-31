@@ -5,6 +5,8 @@
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example-one" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example-two" />
     <file type="web" url="file://$PROJECT_DIR$/spring-mvc-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-mybatis-example" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -17,6 +19,9 @@
         <option value="$PROJECT_DIR$/spring-boot-example-two/pom.xml" />
         <option value="$PROJECT_DIR$/spring-example/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc-example/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mybatis-example/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-mvc-mybatis/pom.xml" />
       </list>
     </option>
   </component>

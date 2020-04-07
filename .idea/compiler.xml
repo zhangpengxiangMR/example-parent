@@ -3,26 +3,50 @@
   <component name="CompilerConfiguration">
     <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-example-one" />
-        <module name="spring-mybatis-example" />
-        <module name="spring-boot-example-two" />
         <module name="spring-example" />
+        <module name="spring-v1" />
         <module name="spring-mvc-example" />
+        <module name="mybatis-example" />
+        <module name="ssm-example" />
+        <module name="chapter3" />
+        <module name="chapter2" />
+        <module name="chapter1" />
+        <module name="chapter4" />
+        <module name="spring-v2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
+      <module name="example2" target="1.8" />
+      <module name="spring-boot-example-one" target="1.8" />
+      <module name="spring-boot-example-two" target="1.8" />
+      <module name="spring-boot-yangkaizhen-example2" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chapter1" options="-parameters" />
+      <module name="chapter2" options="-parameters" />
+      <module name="chapter3" options="-parameters" />
+      <module name="chapter4" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="example2" options="-parameters" />
+      <module name="mybatis-example" options="" />
       <module name="spring-boot-example-one" options="-parameters" />
       <module name="spring-boot-example-two" options="-parameters" />
+      <module name="spring-boot-yangkaizhen-example" options="-parameters" />
+      <module name="spring-boot-yangkaizhen-example2" options="-parameters" />
       <module name="spring-example" options="" />
       <module name="spring-mvc-example" options="" />
-      <module name="spring-mybatis-example" options="" />
+      <module name="spring-v1" options="-verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_111/jre/lib/rt.jar&quot;" />
+      <module name="spring-v2" options="" />
+      <module name="ssm-example" options="" />
     </option>
   </component>
 </project>

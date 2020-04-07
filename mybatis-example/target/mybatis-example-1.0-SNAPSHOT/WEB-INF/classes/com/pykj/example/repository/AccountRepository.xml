@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.pykj.example.repository.AccountRepository">
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"></cache>
+    <insert id="save" parameterType="com.pykj.example.entity.Account">
+        insert into t_account(username,password,age) values(#{username},#{password},#{age});
+    </insert>
+
+    <update id="update" parameterType="com.pykj.example.entity.Account">
+        update t_account set username= #{username},password = #{password},age=#{age} where id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from t_account where id = #{id}
+    </delete>
+
+    <select id="findAll" resultType="com.pykj.example.entity.Account">
+        select * from t_account
+    </select>
+
+    <select id="findById" parameterType="java.lang.Integer" resultType="com.pykj.example.entity.Account">
+        select * from t_account where id = #{id}
+    </select>
+</mapper>

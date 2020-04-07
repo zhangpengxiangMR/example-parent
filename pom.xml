@@ -11,14 +11,13 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.pykj</groupId>
+    <groupId>com.pykj.parent</groupId>
     <artifactId>spring-example-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-boot-example-one</module>
-        <module>spring-boot-example-two</module>
+        <module>spring-boot-yangkaizhen-example</module>
     </modules>
 
     <properties>
@@ -26,17 +25,15 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <com.alibaba.druid>1.1.21</com.alibaba.druid>
-        <com.alibaba.fastjson>1.2.58</com.alibaba.fastjson>
-        <spring.boot.starter.data.jpa>2.2.2.RELEASE</spring.boot.starter.data.jpa>
         <mysql.connector.java>8.0.9-rc</mysql.connector.java>
     </properties>
 
-    <dependencies>
-        <!--
+    <!--<dependencies>
+        &lt;!&ndash;
         默认有两个模块
         spring-boot-starter：核心模块，包括自动配置支持、日志和 YAML；
         spring-boot-starter-test：测试模块，包括 JUnit、Hamcrest、Mockito
-        -->
+        &ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -53,18 +50,18 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--热启动
+        &lt;!&ndash;热启动
         1、在 dependency 中添加 optional 属性，并设置为 true：
         2、在 plugin 中配置另外一个属性 fork，并且配置为 true：
         3、配置 Idea，选择 File-Settings-Compiler 勾选 Build project automatically
         使用快捷键：CTRL + SHIFT + A 输入Registry 找到选项 compile.automake.allow.when.app.running 勾选
-        -->
+        &ndash;&gt;
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
-    </dependencies>
+    </dependencies>-->
 
     <dependencyManagement>
         <dependencies>
@@ -72,11 +69,6 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
                 <version>${com.alibaba.druid}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>${spring.boot.starter.data.jpa}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>

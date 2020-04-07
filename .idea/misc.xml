@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/mybatis-example" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example-one" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example-two" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-yangkaizhen-example" />
     <file type="web" url="file://$PROJECT_DIR$/spring-mvc-example" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-mybatis-example" />
-    <file type="web" url="file://$PROJECT_DIR$/ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-v1" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-v2" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm-example" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -15,17 +18,27 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-example-one/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-example-two/pom.xml" />
         <option value="$PROJECT_DIR$/spring-example/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc-example/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mybatis-example/pom.xml" />
         <option value="$PROJECT_DIR$/spring-mvc-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-v1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-v2/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-example/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-example/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter4/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

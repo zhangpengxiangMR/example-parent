@@ -18,13 +18,18 @@ import java.util.Map;
 public class PYApplicationContext {
 
     //private String [] configLocations;
-
+    /**
+     * beanDefinition缓存
+     */
     private Map<String, PYBeanDefinition> beanDefinitionMap = new HashMap<>();
 
     private PYBeanDefinitionReader reader;
 
     private Map<String,PYBeanWrapper> factoryBeanInstanceCache = new HashMap<>();
 
+    /**
+     * 存储对象实例化对象
+     */
     private Map<String,Object> factoryBeanObjectCache = new HashMap<>();
 
     public PYApplicationContext(String... configLocations) {
@@ -53,7 +58,8 @@ public class PYApplicationContext {
     private void doRegistBeanDefinition(List<PYBeanDefinition> beanDefiinitions) throws Exception {
         for (PYBeanDefinition beanDefiinition : beanDefiinitions) {
             if(this.beanDefinitionMap.containsKey(beanDefiinition.getFactoryBeanName())) {
-                throw new Exception("The" + beanDefiinition.getFactoryBeanName() +"is exists");
+                continue;
+                //throw new Exception("The" + beanDefiinition.getFactoryBeanName() +"is exists");
             }
             beanDefinitionMap.put(beanDefiinition.getFactoryBeanName(),beanDefiinition);
             beanDefinitionMap.put(beanDefiinition.getBeanClassName(),beanDefiinition);
@@ -127,9 +133,13 @@ public class PYApplicationContext {
         String className = pyBeanDefinition.getBeanClassName();
         Object instance = null;
         try {
-            Class<?> clazz = Class.forName(className);
-            instance = clazz.newInstance();
-            this.factoryBeanObjectCache.put(beanName,instance);
+            if(this.factoryBeanObjectCache.containsKey(beanName)) {
+                instance = this.factoryBeanObjectCache.get(beanName);
+            }else {
+                Class<?> clazz = Class.forName(className);
+                instance = clazz.newInstance();
+                this.factoryBeanObjectCache.put(beanName,instance);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -140,4 +150,15 @@ public class PYApplicationContext {
         return getBean(beanClass.getName());
     }
 
+    /**
+     * 获取BeanDefinition
+     * @return
+     */
+    public int getBeanDefiitionCount() {
+        return this.beanDefinitionMap.size();
+    }
+
+    public String[] getBeanDefinitionNames() {
+        return this.beanDefinitionMap.keySet().toArray(new String[this.beanDefinitionMap.size()]);
+    }
 }

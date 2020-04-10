@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 /**
+ *
  *  职责：加载配置文件
  */
 public class PYBeanDefinitionReader {
@@ -38,8 +39,11 @@ public class PYBeanDefinitionReader {
         for (String regitryBeanClass : regitryBeanClasses) {
             try {
                 Class<?> clazz = Class.forName(regitryBeanClass);
+                if(clazz.isInterface()){continue;}
                 String beanName = toLowerFirstCase(clazz.getSimpleName());
                 String beanClassName = clazz.getName();
+                System.out.println("beanName输出：" + beanName);
+                System.out.println("beanClassName输出：" + beanClassName);
                 //1、默认是类名首字母小写
                 result.add(doCreateBeanDefinition(beanName,beanClassName));
                 //2、自定义

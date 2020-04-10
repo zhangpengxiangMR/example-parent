@@ -1,12 +1,19 @@
 package com.pykj.v2.spring.framework.beans.config;
 
 /**
- * 职责：
+ * bean定义
+ * 职责：保存类的名称和类全路径名称
  */
 public class PYBeanDefinition {
 
+    /**
+     * bean名称
+     */
     private String factoryBeanName;
 
+    /**
+     * bean全路径
+     */
     private String beanClassName;
 
     public String getFactoryBeanName() {

@@ -1,5 +1,9 @@
 package com.pykj.v2.spring.framework.beans;
 
+/**
+ * 保存bean的实例和class
+ * Wrapper    ˈrapər
+ */
 public class PYBeanWrapper {
 
     private Object wrapperInstance;

@@ -2,7 +2,6 @@ package com.pykj.v2.spring.framework.webmvc.servlet;
 
 import com.pykj.v2.spring.framework.annotation.PYController;
 import com.pykj.v2.spring.framework.annotation.PYRequestMapping;
-import com.pykj.v2.spring.framework.annotation.PYRequestParam;
 import com.pykj.v2.spring.framework.context.PYApplicationContext;
 
 import javax.servlet.ServletConfig;
@@ -10,90 +9,104 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * DispatcherServlet用到委派模式
  * 职责：负责任务调度，请求分发
- *
  */
 public class PyDispatcherServlet extends HttpServlet {
 
     private PYApplicationContext applicationContext;
 
-    /**
-     * handlerMapping
-     */
-    private Map<String,Method> handlerMapping = new HashMap<String, Method>();
+    private List<PYHandlerMapping> handlerMappings = new ArrayList<>();
+
+    private Map<PYHandlerMapping, PYHandlerAdapter> handlerAdapters = new HashMap<>();
+
+    private List<PYViewResolver> viewResolvers = new ArrayList<PYViewResolver>();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        this.doPost(req,resp);
+        this.doPost(req, resp);
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //6、委派，根据URL去找到一个对应的Method并通过response返回
         try {
-            doDispatch(req,resp);
+            doDispatch(req, resp);
         } catch (Exception e) {
             e.printStackTrace();
-            resp.getWriter().write("500 Exception Detail:" + Arrays.toString(e.getStackTrace()));
+            try {
+                processDispatchResult(req,resp,new PYModelAndView("500"));
+            } catch (Exception ex) {
+                ex.printStackTrace();
+                resp.getWriter().write("500 Exception Detail:" + Arrays.toString(e.getStackTrace()));
+            }
         }
     }
 
     private void doDispatch(HttpServletRequest req, HttpServletResponse resp) throws Exception {
-        String url = req.getRequestURI();
-        String contextPath = req.getContextPath();
-        url =  url.replaceAll(contextPath,"").replaceAll("/+","/");
-        if(!handlerMapping.containsKey(url)){
+        //1、通过URL获取HandlerMappping
+        PYHandlerMapping handlerMapping = getHandler(req);
+        if (handlerMapping == null) {
+            processDispatchResult(req, resp, new PYModelAndView("404"));
             resp.getWriter().write("404 NOT Found");
             return;
         }
-        Map<String,String[]> params = req.getParameterMap();
-        Method method = this.handlerMapping.get(url);
+        //2、根据一个HandlerMapping获取一个HanslerAdapter适配器
+        PYHandlerAdapter ha = getHandlerApadter(handlerMapping);
 
-        //获取形参列表
-        Class<?> [] parameterTypes = method.getParameterTypes();
-        Object [] paramValues = new Object[parameterTypes.length];
+        //3、解析某一个方法的形参和返回值，统一封装为ModelAndView对象
+        PYModelAndView mv = ha.handler(req, resp, handlerMapping);
 
-        for (int i = 0; i < parameterTypes.length; i++) {
-            Class paramterType = parameterTypes[i];
-            if(paramterType == HttpServletRequest.class){
-                paramValues[i] = req;
-            }else if(paramterType == HttpServletResponse.class){
-                paramValues[i] = resp;
-            }else if(paramterType == String.class){
-                //通过运行时的状态去拿到你
-                Annotation[] [] pa = method.getParameterAnnotations();
-                for (int j = 0; j < pa.length ; j ++) {
-                    for(Annotation a : pa[i]){
-                        if(a instanceof PYRequestParam){
-                            String paramName = ((PYRequestParam) a).value();
-                            if(!"".equals(paramName.trim())){
-                                String value = Arrays.toString(params.get(paramName))
-                                        .replaceAll("\\[|\\]","")
-                                        .replaceAll("\\s+",",");
-                                paramValues[i] = value;
-                            }
-                        }
-                    }
-                }
+        //把ModelAndView变成一个ViewResolver
+        processDispatchResult(req, resp, mv);
 
-            }
+    }
+
+    private PYHandlerAdapter getHandlerApadter(PYHandlerMapping handlerMapping) {
+        if(this.handlerAdapters.isEmpty()){return null;}
+        return this.handlerAdapters.get(handlerMapping);
+    }
+
+    private void processDispatchResult(HttpServletRequest req, HttpServletResponse resp, PYModelAndView mv) throws Exception {
+        if(mv == null ){return;}
+        if(this.viewResolvers.isEmpty()){return;}
+        for (PYViewResolver viewResolver : this.viewResolvers) {
+            PYView view = viewResolver.resolveViewName(mv.getViewName());
+            //直接往浏览器输出
+            view.render(mv.getModel(),req,resp);
+            return;
         }
-        String beanName = toLowerFirstCase(method.getDeclaringClass().getSimpleName());
-        method.invoke(applicationContext.getBean(beanName),paramValues);
+
+    }
+
+    private PYHandlerMapping getHandler(HttpServletRequest req) {
+        if (this.handlerMappings.isEmpty()) {
+            return null;
+        }
+        String url = req.getRequestURI();
+        String contextPath = req.getContextPath();
+        url = url.replaceAll(contextPath, "").replaceAll("/+", "/");
+        for (PYHandlerMapping handlerMapping : handlerMappings) {
+            Matcher matcher = handlerMapping.getPattern().matcher(url);
+            if (!matcher.matches()) {
+                continue;
+            }
+            return handlerMapping;
+        }
+        return null;
     }
 
     private String toLowerFirstCase(String simpleName) {
-        char [] chars = simpleName.toCharArray();
-        chars[0] += 32 ;
+        char[] chars = simpleName.toCharArray();
+        chars[0] += 32;
         return String.valueOf(chars);
     }
 
@@ -101,31 +114,77 @@ public class PyDispatcherServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         //初始化Spring核心IoC容器和DI注入
         applicationContext = new PYApplicationContext(config.getInitParameter("contextConfigLocation"));
-        //5、初始化HandlerMapping
-        doInitHandlerMapping();
+        //初始化MVC九大组件
+        initStrategies(applicationContext);
         System.out.println("Spring framework is init. ");
     }
-    private void doInitHandlerMapping() {
-        if(this.applicationContext.getBeanDefiitionCount() == 0 ){
+
+    private void initStrategies(PYApplicationContext context) {
+        //多文件上传的组件
+        //initMultipartResolver(context);
+        //初始化本地语言环境
+        //initLocaleResolver(context);
+        //初始化模板处理器
+        //initThemeResolver(context);
+        //handlerMapping
+        initHandlerMappings(context);
+        //初始化参数适配器
+        initHandlerAdapters(context);
+        //初始化异常拦截器
+        //initHandlerExceptionResolvers(context);
+        //初始化视图预处理器
+        //initRequestToViewNameTranslator(context);
+        //初始化视图转换器
+        initViewResolvers(context);
+        //FlashMap管理器
+        //initFlashMapManager(context);
+
+    }
+
+    private void initViewResolvers(PYApplicationContext context) {
+        //templateRoot=layouts
+        String templateRoot = context.getConfig().getProperty("templateRoot");
+        String templateRootPath = this.getClass().getClassLoader().getResource(templateRoot).getFile();
+
+        File templateRootDir = new File(templateRootPath);
+        for (File file : templateRootDir.listFiles()) {
+            this.viewResolvers.add(new PYViewResolver(templateRoot));
+        }
+    }
+
+    private void initHandlerAdapters(PYApplicationContext context) {
+        for (PYHandlerMapping handlerMapping : handlerMappings) {
+            this.handlerAdapters.put(handlerMapping,new PYHandlerAdapter());
+        }
+    }
+
+    private void initHandlerMappings(PYApplicationContext context) {
+        if (this.applicationContext.getBeanDefiitionCount() == 0) {
             return;
         }
-        /*if(ioc.isEmpty()) {return;}*/
         for (String beanName : this.applicationContext.getBeanDefinitionNames()) {
-            Class<?> clazz = this.applicationContext.getBean(beanName).getClass();
-            if(!clazz.isAnnotationPresent(PYController.class)){continue;}
+            Object instance = this.applicationContext.getBean(beanName);
+            Class<?> clazz = instance.getClass();
+            if (!clazz.isAnnotationPresent(PYController.class)) {
+                continue;
+            }
             String baseUrl = "";
-            if(clazz.isAnnotationPresent(PYRequestMapping.class)) {
+            if (clazz.isAnnotationPresent(PYRequestMapping.class)) {
                 PYRequestMapping pyRequestMapping = clazz.getAnnotation(PYRequestMapping.class);
                 baseUrl = pyRequestMapping.value();
             }
 
             //只获取public的方法
             for (Method method : clazz.getMethods()) {
-                if(!method.isAnnotationPresent(PYRequestMapping.class)){continue;}
+                if (!method.isAnnotationPresent(PYRequestMapping.class)) {
+                    continue;
+                }
                 PYRequestMapping pyRequestMapping = method.getAnnotation(PYRequestMapping.class);
-                String url = ("/" +baseUrl + "/"+ pyRequestMapping.value()).replaceAll("/+","/");
-                handlerMapping.put(url,method);
-                System.out.println("Mapped : " + url  + "," + method);
+                String regex = ("/" + baseUrl + "/" + pyRequestMapping.value().replaceAll("\\*", ".*")).replaceAll("/+", "/");
+                Pattern pattern = Pattern.compile(regex);
+                //handlerMapping.put(url,method);
+                handlerMappings.add(new PYHandlerMapping(pattern, instance, method));
+                System.out.println("Mapped : " + pattern + "," + method);
             }
         }
     }

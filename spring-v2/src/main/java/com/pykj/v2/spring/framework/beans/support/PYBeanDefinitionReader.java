@@ -34,6 +34,10 @@ public class PYBeanDefinitionReader {
         doScanner(contextConfig.getProperty("scanPackage"));
     }
 
+    public Properties getConfig(){
+        return this.contextConfig;
+    }
+
     public List<PYBeanDefinition> loadBeanDefinitions() {
         List<PYBeanDefinition> result = new ArrayList<>();
         for (String regitryBeanClass : regitryBeanClasses) {

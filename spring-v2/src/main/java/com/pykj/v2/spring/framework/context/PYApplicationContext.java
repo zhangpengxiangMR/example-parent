@@ -11,6 +11,7 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 /**
  * 职责：完成Bean的创建和DI
@@ -58,8 +59,8 @@ public class PYApplicationContext {
     private void doRegistBeanDefinition(List<PYBeanDefinition> beanDefiinitions) throws Exception {
         for (PYBeanDefinition beanDefiinition : beanDefiinitions) {
             if(this.beanDefinitionMap.containsKey(beanDefiinition.getFactoryBeanName())) {
-                continue;
-                //throw new Exception("The" + beanDefiinition.getFactoryBeanName() +"is exists");
+                //continue;
+                throw new Exception("The" + beanDefiinition.getFactoryBeanName() +"is exists");
             }
             beanDefinitionMap.put(beanDefiinition.getFactoryBeanName(),beanDefiinition);
             beanDefinitionMap.put(beanDefiinition.getBeanClassName(),beanDefiinition);
@@ -160,5 +161,9 @@ public class PYApplicationContext {
 
     public String[] getBeanDefinitionNames() {
         return this.beanDefinitionMap.keySet().toArray(new String[this.beanDefinitionMap.size()]);
+    }
+
+    public Properties getConfig() {
+        return this.reader.getConfig();
     }
 }

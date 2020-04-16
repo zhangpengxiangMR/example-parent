@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/mybatis-example" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example-one" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-example-two" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-boot-yangkaizhen-example" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-mvc-example" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-v1" />
-    <file type="web" url="file://$PROJECT_DIR$/spring-v2" />
-    <file type="web" url="file://$PROJECT_DIR$/ssm-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-yangkaizhen" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-gupao/spring-annotation" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-gupao/spring-gupao/spring-v1" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-gupao/spring-gupao/spring-v2" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-gupao/spring-v1" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-gupao/spring-v2" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-ningnan/mybatis-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-ningnan/spring-ningnan/mybatis-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-ningnan/spring-ningnan/spring-mvc-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-ningnan/spring-ningnan/ssm-example" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-ningnan/ssm-example" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -30,12 +37,19 @@
         <option value="$PROJECT_DIR$/mybatis-example/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter1/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter4/pom.xml" />
-      </list>
-    </option>
-    <option name="ignoredFiles">
-      <set>
         <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/pom.xml" />
-      </set>
+        <option value="$PROJECT_DIR$/spring-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-gupao/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-ningnan/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-gupao/spring-v1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-xiaomage-example/first-spring-boot-app/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-xiaomage-example/first-spring-boot-app/model/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-xiaomage-example/first-spring-boot-app/persistence/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-xiaomage-example/first-spring-boot-app/web/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter2/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter3/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/pom.xml" />
+      </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">

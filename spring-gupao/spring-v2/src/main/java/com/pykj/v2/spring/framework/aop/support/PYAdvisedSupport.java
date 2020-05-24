@@ -33,6 +33,8 @@ public class PYAdvisedSupport {
      * 方法的通知缓存
      */
     private Map<Method,Map<String,PYAdvice>> methodCache;
+    //private Map<Method, List<Object>> methodCache;
+
 
     private Pattern pointCutClassPattern;
 

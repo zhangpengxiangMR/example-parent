@@ -9,6 +9,8 @@ import com.pykj.v2.spring.framework.aop.support.PYAdvisedSupport;
 import com.pykj.v2.spring.framework.beans.PYBeanWrapper;
 import com.pykj.v2.spring.framework.beans.config.PYBeanDefinition;
 import com.pykj.v2.spring.framework.beans.support.PYBeanDefinitionReader;
+import com.pykj.v2.spring.framework.beans.support.PYDefaultListableBeanFactory;
+import com.pykj.v2.spring.framework.core.PYBeanFactory;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
@@ -19,18 +21,19 @@ import java.util.Properties;
 /**
  * 职责：完成Bean的创建和DI
  */
-public class PYApplicationContext {
+public class PYApplicationContext implements PYBeanFactory {
 
     //private String [] configLocations;
     /**
      * beanDefinition缓存
      */
-    private Map<String, PYBeanDefinition> beanDefinitionMap = new HashMap<>();
+    //private Map<String, PYBeanDefinition> beanDefinitionMap = new HashMap<>();
+
+    private PYDefaultListableBeanFactory regitry = new PYDefaultListableBeanFactory();
 
     private PYBeanDefinitionReader reader;
 
-    /**
-     * key:beanName，value:BeanWrapper
+    /**     * key:beanName，value:BeanWrapper
      */
     private Map<String,PYBeanWrapper> factoryBeanInstanceCache = new HashMap<>();
 
@@ -47,7 +50,7 @@ public class PYApplicationContext {
         List<PYBeanDefinition> beanDefiinitions =  reader.loadBeanDefinitions();
         //3、把BeanDefinition缓存起来
         try {
-            doRegistBeanDefinition(beanDefiinitions);
+            regitry.doRegistBeanDefinition(beanDefiinitions);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -56,36 +59,22 @@ public class PYApplicationContext {
 
     private void doAutowrited() {
         //bean并没有真正的实例化，还只是配置阶段
-        for (Map.Entry<String, PYBeanDefinition> stringPYBeanDefinitionEntry : this.beanDefinitionMap.entrySet()) {
+        for (Map.Entry<String, PYBeanDefinition> stringPYBeanDefinitionEntry : this.regitry.beanDefinitionMap.entrySet()) {
             String beanName = stringPYBeanDefinitionEntry.getKey();
             getBean(beanName);
         }
     }
 
-    /**
-     * 把Definition保存到beanDefinitionMap
-     * @param beanDefiinitions
-     * @throws Exception
-     */
-    private void doRegistBeanDefinition(List<PYBeanDefinition> beanDefiinitions) throws Exception {
-        for (PYBeanDefinition beanDefiinition : beanDefiinitions) {
-            if(this.beanDefinitionMap.containsKey(beanDefiinition.getFactoryBeanName())) {
-                //continue;
-                throw new Exception("The" + beanDefiinition.getFactoryBeanName() +"is exists");
-            }
-            beanDefinitionMap.put(beanDefiinition.getFactoryBeanName(),beanDefiinition);
-            beanDefinitionMap.put(beanDefiinition.getBeanClassName(),beanDefiinition);
-        }
-    }
 
     /**
      * 调用GetBean进行Bean的初始化阶段
      * @param beanName
      * @return
      */
+    @Override
     public Object getBean(String beanName){
         //1、获取BeanDefinition配置
-        PYBeanDefinition pyBeanDefinition = this.beanDefinitionMap.get(beanName);
+        PYBeanDefinition pyBeanDefinition = this.regitry.beanDefinitionMap.get(beanName);
         //2、反射实例化newInstance()
         Object instance = instantiateBean(beanName,pyBeanDefinition);
         //3、封装成一个BeanWrapper
@@ -190,6 +179,7 @@ public class PYApplicationContext {
         return new PYAdvisedSupport(config);
     }
 
+    @Override
     public Object getBean(Class beanClass){
         return getBean(beanClass.getName());
     }
@@ -199,11 +189,11 @@ public class PYApplicationContext {
      * @return
      */
     public int getBeanDefiitionCount() {
-        return this.beanDefinitionMap.size();
+        return this.regitry.beanDefinitionMap.size();
     }
 
     public String[] getBeanDefinitionNames() {
-        return this.beanDefinitionMap.keySet().toArray(new String[this.beanDefinitionMap.size()]);
+        return this.regitry.beanDefinitionMap.keySet().toArray(new String[this.regitry.beanDefinitionMap.size()]);
     }
 
     public Properties getConfig() {

@@ -20,10 +20,15 @@
         <module name="chapter3" />
         <module name="spring-v2" />
         <module name="spring-v1" />
+        <module name="concurrency" />
         <module name="web" />
         <module name="mybatis-example" />
+        <module name="design" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mic" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
@@ -32,12 +37,17 @@
       <module name="chapter2" options="-parameters" />
       <module name="chapter3" options="-parameters" />
       <module name="chapter4" options="-parameters" />
-      <module name="first-spring-boot-app" options="-parameters" />
+      <module name="concurrency" options="" />
+      <module name="design" options="" />
+      <module name="example-parent" options="" />
+      <module name="first-spring-boot-app" options="" />
+      <module name="mic" options="" />
       <module name="model" options="-parameters" />
       <module name="mybatis-example" options="" />
       <module name="persistence" options="-parameters" />
       <module name="spring-annotation" options="" />
-      <module name="spring-boot-yangkaizhen-example" options="-parameters" />
+      <module name="spring-boot-xiaomage" options="" />
+      <module name="spring-boot-yangkaizhen" options="" />
       <module name="spring-example" options="" />
       <module name="spring-gupao" options="" />
       <module name="spring-mvc-example" options="" />

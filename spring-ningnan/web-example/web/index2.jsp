@@ -9,15 +9,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>index</title>
-  </head>
-  <body>
-  <h1>index2.jsp</h1>
+</head>
+<body>
+<h1>index2.jsp</h1>
 
-  <%
-    Integer integer = (Integer)request.getAttribute("number");
-  %>
-  <%=integer%>
-  </body>
+<%
+    Integer integer = (Integer) request.getAttribute("number");
+%>
+<%=integer%>
+</body>
 </html>

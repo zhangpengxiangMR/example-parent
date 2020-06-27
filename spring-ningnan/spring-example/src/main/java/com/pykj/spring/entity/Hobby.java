@@ -6,7 +6,7 @@ import lombok.Data;
 public class Hobby {
 
 
-    private Long id ;
+    private Long id;
 
     private String name;
 

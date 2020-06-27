@@ -12,9 +12,9 @@
 </head>
 <body>
 
-    <a href="/file/download/1">1.png</a>
-    <a href="/file/download/2">2.png</a>
-    <a href="/file/download/3">3.png</a>
+<a href="/file/download/1">1.png</a>
+<a href="/file/download/2">2.png</a>
+<a href="/file/download/3">3.png</a>
 
 </body>
 </html>

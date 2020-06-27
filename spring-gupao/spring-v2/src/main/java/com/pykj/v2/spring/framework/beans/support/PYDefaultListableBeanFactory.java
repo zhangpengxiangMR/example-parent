@@ -31,17 +31,18 @@ public class PYDefaultListableBeanFactory implements PYBeanFactory {
 
     /**
      * 把Definition保存到beanDefinitionMap
+     *
      * @param beanDefiinitions
      * @throws Exception
      */
     public void doRegistBeanDefinition(List<PYBeanDefinition> beanDefiinitions) throws Exception {
         for (PYBeanDefinition beanDefiinition : beanDefiinitions) {
-            if(this.beanDefinitionMap.containsKey(beanDefiinition.getFactoryBeanName())) {
+            if (this.beanDefinitionMap.containsKey(beanDefiinition.getFactoryBeanName())) {
                 //continue;
-                throw new Exception("The" + beanDefiinition.getFactoryBeanName() +"is exists");
+                throw new Exception("The" + beanDefiinition.getFactoryBeanName() + "is exists");
             }
-            beanDefinitionMap.put(beanDefiinition.getFactoryBeanName(),beanDefiinition);
-            beanDefinitionMap.put(beanDefiinition.getBeanClassName(),beanDefiinition);
+            beanDefinitionMap.put(beanDefiinition.getFactoryBeanName(), beanDefiinition);
+            beanDefinitionMap.put(beanDefiinition.getBeanClassName(), beanDefiinition);
         }
     }
 }

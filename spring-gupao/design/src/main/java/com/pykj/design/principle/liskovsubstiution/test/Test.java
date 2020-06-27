@@ -9,12 +9,12 @@ import com.pykj.design.principle.liskovsubstiution.example.Rectangle;
  */
 public class Test {
 
-    public static void resize(Rectangle rectangle){
-        while (rectangle.getWidth() >= rectangle.getHeight()){
+    public static void resize(Rectangle rectangle) {
+        while (rectangle.getWidth() >= rectangle.getHeight()) {
             rectangle.setHeight(rectangle.getHeight() + 1);
-            System.out.println("width:" +rectangle.getWidth() + "height:"  + rectangle.getHeight());
+            System.out.println("width:" + rectangle.getWidth() + "height:" + rectangle.getHeight());
         }
-        System.out.println("方法结束:" +  "width:"+rectangle.getWidth() + "height:"  + rectangle.getHeight());
+        System.out.println("方法结束:" + "width:" + rectangle.getWidth() + "height:" + rectangle.getHeight());
     }
 
     public static void main(String[] args) {

@@ -7,7 +7,7 @@ package com.pykj.design.principle.singleresponsibility.example2;
  */
 public class ReplayCourse {
 
-    public void study(String courseName){
+    public void study(String courseName) {
         System.out.println(courseName + "可以反复看");
     }
 

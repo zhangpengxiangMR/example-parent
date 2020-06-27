@@ -17,28 +17,28 @@ import javax.validation.Valid;
 public class ValidatorHandler {
 
     @GetMapping("/login")
-    public String login(Model model){
-        model.addAttribute("account",new Account());
+    public String login(Model model) {
+        model.addAttribute("account", new Account());
         return "login";
     }
 
     @PostMapping("/login")
-    public String login(@Validated Account account, BindingResult bindingResult){
-       if(bindingResult.hasErrors()){
-           return "login";
-       }
+    public String login(@Validated Account account, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "login";
+        }
         return "index";
     }
 
     @GetMapping("/register")
-    public String register(Model model){
-        model.addAttribute("person",new Person());
+    public String register(Model model) {
+        model.addAttribute("person", new Person());
         return "register";
     }
 
     @PostMapping("/register")
-    public String register(@Valid Person person,BindingResult bindingResult){
-        if(bindingResult.hasErrors()){
+    public String register(@Valid Person person, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
             return "register";
         }
         return "index";

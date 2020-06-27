@@ -8,16 +8,16 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 public class DatabaseConditional implements Condition {
 
 
-	/*
-	 * 
-	 * @param context 条件上下文
-	 * @param 
-	 */
-	@Override
-	public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
-		Environment env = context.getEnvironment();
-		return env.containsProperty("database.driverName") && env.containsProperty("database.url") 
-				&& env.containsProperty("database.username") && env.containsProperty("database.password");
-	}
+    /*
+     *
+     * @param context 条件上下文
+     * @param
+     */
+    @Override
+    public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
+        Environment env = context.getEnvironment();
+        return env.containsProperty("database.driverName") && env.containsProperty("database.url")
+                && env.containsProperty("database.username") && env.containsProperty("database.password");
+    }
 
 }

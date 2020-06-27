@@ -11,7 +11,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * @author: zhangpengxiang
  * @time: 2020/4/14 23:38
  */
-public class WinConditional  implements Condition {
+public class WinConditional implements Condition {
 
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
@@ -21,7 +21,7 @@ public class WinConditional  implements Condition {
         System.out.println("----" + osName + "----");
         String osTest = environment.getProperty("os.test");
         System.out.println("----" + osTest + "----");
-        if("Windows".equals(osName)){
+        if ("Windows".equals(osName)) {
             return true;
         }
         return false;

@@ -10,26 +10,26 @@ import java.util.Collection;
 public class RESTHandler {
 
     @GetMapping("/findAll")
-    public Collection<Student> findAll(){
+    public Collection<Student> findAll() {
         return null;
     }
 
     @GetMapping("/findById/{id}")
-    public Student findById(@PathVariable("id") long id){
+    public Student findById(@PathVariable("id") long id) {
         return null;
     }
 
     @PostMapping("/save")
-    public void save(@RequestBody Student student){
+    public void save(@RequestBody Student student) {
     }
 
     @PutMapping("/update")
-    public void update(@RequestBody Student student){
+    public void update(@RequestBody Student student) {
 
     }
 
     @DeleteMapping("/delete/{id}")
-    public void delete(@PathVariable("id") long id){
+    public void delete(@PathVariable("id") long id) {
 
     }
 

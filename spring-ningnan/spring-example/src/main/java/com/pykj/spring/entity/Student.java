@@ -7,11 +7,12 @@ import java.util.List;
 @Data
 public class Student {
 
-    private Long id ;
+    private Long id;
     private String name;
     private Integer age;
     private Address address;
     private List<Hobby> hobbyList;
+
     {
         System.out.println("我是不添加static的静态方法");
     }

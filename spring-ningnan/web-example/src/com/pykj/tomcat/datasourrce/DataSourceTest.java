@@ -24,7 +24,7 @@ public class DataSourceTest {
             Connection connection = dataSource.getConnection();
             System.out.println(connection);
             connection.close();
-        } catch ( Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

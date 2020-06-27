@@ -17,18 +17,18 @@ public class PYView {
     }
 
 
-    public void render(Map<String,?> model, HttpServletRequest req, HttpServletResponse resp) throws Exception {
+    public void render(Map<String, ?> model, HttpServletRequest req, HttpServletResponse resp) throws Exception {
         StringBuffer sb = new StringBuffer();
-        RandomAccessFile ra = new RandomAccessFile(this.viewFile,"r");
+        RandomAccessFile ra = new RandomAccessFile(this.viewFile, "r");
 
         String line = null;
-        while (null != (line = ra.readLine())){
-            line = new String(line.getBytes("ISO-8859-1"),"utf-8");
-            Pattern pattern = Pattern.compile("￥\\{[^\\}]+\\}",Pattern.CASE_INSENSITIVE);
+        while (null != (line = ra.readLine())) {
+            line = new String(line.getBytes("ISO-8859-1"), "utf-8");
+            Pattern pattern = Pattern.compile("￥\\{[^\\}]+\\}", Pattern.CASE_INSENSITIVE);
             Matcher matcher = pattern.matcher(line);
-            while (matcher.find()){
+            while (matcher.find()) {
                 String paramName = matcher.group();
-                paramName = paramName.replaceAll("￥\\{|\\}","");
+                paramName = paramName.replaceAll("￥\\{|\\}", "");
                 Object paramValue = model.get(paramName);
                 line = matcher.replaceFirst(makeStringForRegExp(paramValue.toString()));
                 matcher = pattern.matcher(line);

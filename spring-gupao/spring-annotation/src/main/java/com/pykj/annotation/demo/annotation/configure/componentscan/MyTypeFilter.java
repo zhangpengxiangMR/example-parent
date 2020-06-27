@@ -17,7 +17,7 @@ import java.io.IOException;
 public class MyTypeFilter implements TypeFilter {
 
     /**
-     * @param metadataReader    获取当前正在操作类的信息
+     * @param metadataReader        获取当前正在操作类的信息
      * @param metadataReaderFactory 获取上下文中类的信息
      * @return
      * @throws IOException
@@ -32,7 +32,7 @@ public class MyTypeFilter implements TypeFilter {
         Resource resource = metadataReader.getResource();
         String className = classMetadata.getClassName();
         System.out.println("----" + className + "----");
-        if(className.contains("er")) {
+        if (className.contains("er")) {
             return true;
         }
         return false;

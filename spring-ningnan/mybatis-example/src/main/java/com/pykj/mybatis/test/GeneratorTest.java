@@ -22,7 +22,7 @@ public class GeneratorTest {
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);
             MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
             myBatisGenerator.generate(null);
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 

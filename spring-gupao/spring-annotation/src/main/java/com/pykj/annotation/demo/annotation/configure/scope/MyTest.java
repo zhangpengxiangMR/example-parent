@@ -12,10 +12,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MyTest {
 
     @Test
-    public void test(){
+    public void test() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
-        Object person1= context.getBean("person");
+        Object person1 = context.getBean("person");
         Object person2 = context.getBean("person");
         System.out.println(person1 == person2);
 

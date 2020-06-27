@@ -16,7 +16,7 @@ import org.springframework.context.annotation.PropertySource;
 public class MyConfig {
 
     @Bean
-    public Bird bird(){
+    public Bird bird() {
         return new Bird();
     }
 

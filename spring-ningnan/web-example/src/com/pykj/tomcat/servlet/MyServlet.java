@@ -6,6 +6,7 @@ import java.io.IOException;
 
 /**
  * servlet
+ *
  * @WebServlet注解可以替代web.xml配置
  */
 @WebServlet("/myservlet")
@@ -23,7 +24,7 @@ public class MyServlet implements Servlet {
     @Override
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
         String id = servletRequest.getParameter("id");
-        System.out.println("我已经接收到客户端请求,参数为：" +id);
+        System.out.println("我已经接收到客户端请求,参数为：" + id);
         servletResponse.setContentType("text/html;charset=UTF-8");
         servletResponse.getWriter().write("客户端你好，我已经接收到请求");
     }

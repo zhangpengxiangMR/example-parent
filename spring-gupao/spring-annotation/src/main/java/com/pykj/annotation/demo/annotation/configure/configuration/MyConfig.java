@@ -10,8 +10,8 @@ public class MyConfig {
 
     @Bean(value = "person")
     //@Bean
-    public MyPerson person1(){
-        return new MyPerson("张鹏祥",19);
+    public MyPerson person1() {
+        return new MyPerson("张鹏祥", 19);
     }
 
 }

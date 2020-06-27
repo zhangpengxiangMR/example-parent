@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
         "com.pykj.annotation.project.controller",
         "com.pykj.annotation.project.service",
         "com.pykj.annotation.project.dao"}
-        )
+)
 public class MyConfig {
 
 }

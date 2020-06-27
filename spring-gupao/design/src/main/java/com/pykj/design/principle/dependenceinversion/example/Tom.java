@@ -7,11 +7,11 @@ package com.pykj.design.principle.dependenceinversion.example;
  */
 public class Tom {
 
-    public void studyJavaCourse(){
+    public void studyJavaCourse() {
         System.out.println("Tom 在学习Java的课程");
     }
 
-    public void studyPythonCourse(){
+    public void studyPythonCourse() {
         System.out.println("Tom 在学习Python的课程");
     }
 

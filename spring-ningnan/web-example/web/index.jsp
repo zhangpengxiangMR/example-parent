@@ -9,22 +9,22 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>index</title>
-  </head>
-  <body>
-  <h1>index.jsp</h1>
-  <%!
-    public String test(){
-      return "Hello word";
+</head>
+<body>
+<h1>index.jsp</h1>
+<%!
+    public String test() {
+        return "Hello word";
     }
-  %>
-  <%
+%>
+<%
     String test = test();
-  %>
-  <%=test%>
+%>
+<%=test%>
 
-  <%
+<%
     List<String> names = new ArrayList<>();
     names.add("张三");
     names.add("李四");
@@ -33,63 +33,63 @@
     ages.add(18);
     ages.add(28);
     ages.add(38);
-  %>
+%>
 
-  <table>
+<table>
     <tr>
-      <td>姓名</td>
-      <td>年龄</td>
+        <td>姓名</td>
+        <td>年龄</td>
     </tr>
     <%
-      for (int i =0 ;i < names.size();i++) {
+        for (int i = 0; i < names.size(); i++) {
     %>
     <tr>
-      <td>
-        <%=names.get(i)%>
-      </td>
-      <td>
-        <%=ages.get(i)%>
-      </td>
+        <td>
+            <%=names.get(i)%>
+        </td>
+        <td>
+            <%=ages.get(i)%>
+        </td>
     </tr>
     <%
-      }
+        }
     %>
-  </table>
+</table>
 
 
-  <%
+<%
     List<Users> usersList = new ArrayList<Users>();
-    usersList.add(new Users("张鹏祥",18));
-    usersList.add(new Users("熊珍",18));
-  %>
-  <table>
+    usersList.add(new Users("张鹏祥", 18));
+    usersList.add(new Users("熊珍", 18));
+%>
+<table>
     <tr>
-      <td>姓名</td>
-      <td>年龄</td>
+        <td>姓名</td>
+        <td>年龄</td>
     </tr>
     <%
-      for (int i =0 ;i < usersList.size();i++) {
+        for (int i = 0; i < usersList.size(); i++) {
     %>
     <tr>
-      <td>
-        <%=usersList.get(i).getName()%>
-      </td>
-      <td>
-        <%=usersList.get(i).getAge()%>
-      </td>
+        <td>
+            <%=usersList.get(i).getName()%>
+        </td>
+        <td>
+            <%=usersList.get(i).getAge()%>
+        </td>
     </tr>
     <%
-      }
+        }
     %>
     <%
-      String name = request.getParameter("name");
-      Integer integer = Integer.parseInt(name);
-      integer++;
-      request.setAttribute("number",integer);
-      request.getRequestDispatcher("index2.jsp").forward(request,response);
+        String name = request.getParameter("name");
+        Integer integer = Integer.parseInt(name);
+        integer++;
+        request.setAttribute("number", integer);
+        request.getRequestDispatcher("index2.jsp").forward(request, response);
     %>
     <%=name%>
-  </table>
+</table>
 
-  </body>
+</body>
 </html>

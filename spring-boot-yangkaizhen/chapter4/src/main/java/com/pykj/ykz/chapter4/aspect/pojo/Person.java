@@ -7,9 +7,9 @@ package com.pykj.ykz.chapter4.aspect.pojo;
  */
 public class Person {
 
-    private Long id ;
+    private Long id;
 
-    private String name ;
+    private String name;
 
     public Long getId() {
         return id;

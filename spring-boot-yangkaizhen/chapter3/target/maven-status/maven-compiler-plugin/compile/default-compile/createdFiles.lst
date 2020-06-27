@@ -1,0 +1,17 @@
+com\pykj\spring\boot\ykz\chapter3\condition\DatabaseConditional.class
+com\pykj\spring\boot\ykz\chapter3\pojo\definition\Person.class
+com\pykj\spring\boot\ykz\chapter3\properties\DataBasePropertiesConfiguration.class
+com\pykj\spring\boot\ykz\chapter3\pojo\User.class
+com\pykj\spring\boot\ykz\chapter3\Chapter3Application.class
+com\pykj\spring\boot\ykz\chapter3\pojo\BeanPostProcessorExample.class
+com\pykj\spring\boot\ykz\chapter3\pojo\Cat.class
+com\pykj\spring\boot\ykz\chapter3\service\UserService.class
+META-INF\spring-configuration-metadata.json
+com\pykj\spring\boot\ykz\chapter3\properties\DataBaseProperties.class
+com\pykj\spring\boot\ykz\chapter3\config\AppConfig.class
+com\pykj\spring\boot\ykz\chapter3\pojo\definition\Animal.class
+com\pykj\spring\boot\ykz\chapter3\pojo\BussinessPerson.class
+com\pykj\spring\boot\ykz\chapter3\pojo\BussinessPersons.class
+com\pykj\spring\boot\ykz\chapter3\pojo\Dog.class
+com\pykj\spring\boot\ykz\chapter3\datasource\DataSources.class
+com\pykj\spring\boot\ykz\chapter3\test\IoCTest.class

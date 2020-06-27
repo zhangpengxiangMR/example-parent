@@ -41,17 +41,17 @@
             <scope>provided</scope>
         </dependency>
         <!--加载测试依赖包-->
-       <!-- <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>-->
+        <!-- <dependency>
+             <groupId>org.springframework.boot</groupId>
+             <artifactId>spring-boot-starter-test</artifactId>
+             <scope>test</scope>
+             <exclusions>
+                 <exclusion>
+                     <groupId>org.junit.vintage</groupId>
+                     <artifactId>junit-vintage-engine</artifactId>
+                 </exclusion>
+             </exclusions>
+         </dependency>-->
         <!--jsp-->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>

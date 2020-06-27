@@ -7,10 +7,10 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.pykj.spring.boot.ykz.chapter3.*"})
-@PropertySource(value = {"classpath:jdbc.properties"},ignoreResourceNotFound = false)
+@PropertySource(value = {"classpath:jdbc.properties"}, ignoreResourceNotFound = false)
 public class Chapter3Application {
 
-	public static void main(String[] args) {
-		SpringApplication.run(Chapter3Application.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Chapter3Application.class, args);
+    }
 }

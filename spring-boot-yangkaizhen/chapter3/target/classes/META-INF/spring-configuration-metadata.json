@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "database",
+      "type": "com.pykj.spring.boot.ykz.chapter3.properties.DataBasePropertiesConfiguration",
+      "sourceType": "com.pykj.spring.boot.ykz.chapter3.properties.DataBasePropertiesConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "database.driver-name",
+      "type": "java.lang.String",
+      "sourceType": "com.pykj.spring.boot.ykz.chapter3.properties.DataBasePropertiesConfiguration"
+    },
+    {
+      "name": "database.password",
+      "type": "java.lang.String",
+      "sourceType": "com.pykj.spring.boot.ykz.chapter3.properties.DataBasePropertiesConfiguration"
+    },
+    {
+      "name": "database.url",
+      "type": "java.lang.String",
+      "sourceType": "com.pykj.spring.boot.ykz.chapter3.properties.DataBasePropertiesConfiguration"
+    },
+    {
+      "name": "database.username",
+      "type": "java.lang.String",
+      "sourceType": "com.pykj.spring.boot.ykz.chapter3.properties.DataBasePropertiesConfiguration"
+    }
+  ],
+  "hints": []
+}

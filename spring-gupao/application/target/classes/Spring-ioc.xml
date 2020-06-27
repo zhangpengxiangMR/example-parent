@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--创建方式1：空参构造创建-->
+    <bean id="a" class="com.pykj.gupao.application.reflection.demo5.A"></bean>
+
+    <!--创建方式2：静态工厂创建
+    调用A的createAObj方法名来创建b的对象放入容器
+    -->
+    <bean id="b" class="com.pykj.gupao.application.reflection.demo5.A" factory-method="createBObj"></bean>
+
+    <!--创建方式3：实例工厂创建
+    调用a的createAObj方法来创建名为c的对象放入容器
+    -->
+    <bean id="c" factory-bean="a" factory-method="createCObj"></bean>
+</beans>

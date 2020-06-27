@@ -12,13 +12,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class MyService {
 
-   /* @Qualifier("dao")
-    @Autowired*/
+    /* @Qualifier("dao")
+     @Autowired*/
     //@Resource(name = "resourceDao")
     @Autowired
     public MyDao myDao;
 
-    public void print(){
+    public void print() {
         System.out.println(myDao);
     }
 

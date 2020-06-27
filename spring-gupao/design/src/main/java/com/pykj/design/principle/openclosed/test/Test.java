@@ -12,11 +12,11 @@ import com.pykj.design.principle.openclosed.example.JavaDiscountCourse;
 public class Test {
 
     public static void main(String[] args) {
-        ICourse javaCourse = new JavaCourse(1,"java",100.00);
+        ICourse javaCourse = new JavaCourse(1, "java", 100.00);
         System.out.println(javaCourse.getPrice());
 
-        JavaDiscountCourse javaDiscountCourse = new JavaDiscountCourse(1,"java",100.00);
-        System.out.println("原始价格：" + javaDiscountCourse.getPrice()+",折扣价格：" + javaDiscountCourse.getDiscountPrice());
+        JavaDiscountCourse javaDiscountCourse = new JavaDiscountCourse(1, "java", 100.00);
+        System.out.println("原始价格：" + javaDiscountCourse.getPrice() + ",折扣价格：" + javaDiscountCourse.getDiscountPrice());
 
     }
 

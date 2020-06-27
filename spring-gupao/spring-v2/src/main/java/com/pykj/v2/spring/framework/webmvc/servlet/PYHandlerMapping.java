@@ -6,21 +6,21 @@ import java.util.regex.Pattern;
 
 public class PYHandlerMapping {
     /**
-     *URL
+     * URL
      */
     private Pattern pattern;
 
     /**
-     *对应的method
+     * 对应的method
      */
     private Method method;
 
     /**
-     *Method对应的实例化对象
+     * Method对应的实例化对象
      */
     private Object controller;
 
-    public PYHandlerMapping(Pattern pattern, Object controller,Method method) {
+    public PYHandlerMapping(Pattern pattern, Object controller, Method method) {
         this.pattern = pattern;
         this.method = method;
         this.controller = controller;

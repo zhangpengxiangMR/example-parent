@@ -8,7 +8,7 @@ package com.pykj.ykz.chapter4.service.impl;
 public class HelloTest {
 
     public void sayHello(String name) {
-        if(name == null || name.trim().equals("")){
+        if (name == null || name.trim().equals("")) {
             throw new RuntimeException("参数异常");
         }
         System.out.println("hello" + name);

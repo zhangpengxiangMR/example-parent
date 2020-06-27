@@ -13,12 +13,12 @@
             <param-value>classpath:springmvc.xml</param-value>
         </init-param>
     </servlet>
-    
+
     <servlet-mapping>
         <servlet-name>dispatcherservlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-    
+
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.js</url-pattern>
@@ -35,8 +35,8 @@
         <servlet-name>default</servlet-name>
         <url-pattern>*.md</url-pattern>
     </servlet-mapping>
-    
-    
+
+
     <filter>
         <filter-name>encodingFilter</filter-name>
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>

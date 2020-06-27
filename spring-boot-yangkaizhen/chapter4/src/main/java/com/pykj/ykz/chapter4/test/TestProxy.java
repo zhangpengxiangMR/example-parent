@@ -19,22 +19,21 @@ public class TestProxy {
     }
 
 
-    private static void test(){
+    private static void test() {
         HelloService helloService = new HelloServiceImpl();
-        HelloService proxy = (HelloService)ProxyBean.getProxyBean(helloService,new MyInterceptor());
+        HelloService proxy = (HelloService) ProxyBean.getProxyBean(helloService, new MyInterceptor());
         proxy.sayHello("zhangsan");
         System.out.println("\n####################name is null##############\n");
         proxy.sayHello(null);
     }
 
-    private static void helloTest(){
+    private static void helloTest() {
         HelloTest helloTest = new HelloTest();
-        HelloTest proxy = (HelloTest)ProxyBean.getProxyBean(helloTest,new MyInterceptor());
+        HelloTest proxy = (HelloTest) ProxyBean.getProxyBean(helloTest, new MyInterceptor());
         proxy.sayHello("zhangsan");
         System.out.println("\n####################name is null##############\n");
         proxy.sayHello(null);
     }
-
 
 
 }

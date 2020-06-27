@@ -13,7 +13,7 @@ public class ProductDao {
         this.dbConnection = dbConnection;
     }
 
-    public void addProduct(){
+    public void addProduct() {
         String conn = dbConnection.getConnection();
         System.out.println("使用" + conn + "增加产品");
     }

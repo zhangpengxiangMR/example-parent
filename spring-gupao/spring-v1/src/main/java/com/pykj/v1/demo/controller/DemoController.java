@@ -15,44 +15,44 @@ import java.io.IOException;
 @PYRequestMapping("/demo")
 public class DemoController {
 
-  	@PYAutowired
-	private IDemoService demoService;
+    @PYAutowired
+    private IDemoService demoService;
 
-	@PYRequestMapping("/query")
-	public void query(HttpServletRequest req, HttpServletResponse resp,
-					  @PYRequestParam("name") String name){
-		String result = demoService.get(name);
+    @PYRequestMapping("/query")
+    public void query(HttpServletRequest req, HttpServletResponse resp,
+                      @PYRequestParam("name") String name) {
+        String result = demoService.get(name);
 //		String result = "My name is " + name;
-		try {
-			resp.getWriter().write(result);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+        try {
+            resp.getWriter().write(result);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-	@PYRequestMapping("/add")
-	public void add(HttpServletRequest req, HttpServletResponse resp,
-					@PYRequestParam("a") Integer a, @PYRequestParam("b") Integer b){
-		try {
-			resp.getWriter().write(a + "+" + b + "=" + (a + b));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    @PYRequestMapping("/add")
+    public void add(HttpServletRequest req, HttpServletResponse resp,
+                    @PYRequestParam("a") Integer a, @PYRequestParam("b") Integer b) {
+        try {
+            resp.getWriter().write(a + "+" + b + "=" + (a + b));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-	@PYRequestMapping("/sub")
-	public void add(HttpServletRequest req, HttpServletResponse resp,
-					@PYRequestParam("a") Double a, @PYRequestParam("b") Double b){
-		try {
-			resp.getWriter().write(a + "-" + b + "=" + (a - b));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    @PYRequestMapping("/sub")
+    public void add(HttpServletRequest req, HttpServletResponse resp,
+                    @PYRequestParam("a") Double a, @PYRequestParam("b") Double b) {
+        try {
+            resp.getWriter().write(a + "-" + b + "=" + (a - b));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-	@PYRequestMapping("/remove")
-	public String  remove(@PYRequestParam("id") Integer id){
-		return "" + id;
-	}
+    @PYRequestMapping("/remove")
+    public String remove(@PYRequestParam("id") Integer id) {
+        return "" + id;
+    }
 
 }

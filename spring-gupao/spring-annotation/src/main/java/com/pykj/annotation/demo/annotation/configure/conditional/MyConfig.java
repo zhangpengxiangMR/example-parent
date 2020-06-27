@@ -16,23 +16,23 @@ public class MyConfig {
 
     @Conditional(WinConditional.class)
     @Bean
-    public MyPerson tom(){
+    public MyPerson tom() {
         System.out.println("将对象tom添加到IoC容器中");
-        return new MyPerson("tom",19);
+        return new MyPerson("tom", 19);
     }
 
     @Conditional(WinConditional.class)
     @Bean
-    public MyPerson mic(){
+    public MyPerson mic() {
         System.out.println("将对象mic添加到IoC容器中");
-        return new MyPerson("mic",18);
+        return new MyPerson("mic", 18);
     }
 
     @Conditional(LinuxConditional.class)
     @Bean
-    public MyPerson james(){
+    public MyPerson james() {
         System.out.println("将对象james添加到IoC容器中");
-        return new MyPerson("james",17);
+        return new MyPerson("james", 17);
     }
 
 }

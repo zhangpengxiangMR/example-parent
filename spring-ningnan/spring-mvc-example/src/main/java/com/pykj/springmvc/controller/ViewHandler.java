@@ -20,25 +20,25 @@ import java.util.Map;
 public class ViewHandler {
 
     @RequestMapping("/map")
-    public String map(Map<String,Users> map){
+    public String map(Map<String, Users> map) {
         Users users = new Users();
         users.setId(1);
         users.setName("map");
-        map.put("users",users);
+        map.put("users", users);
         return "view";
     }
 
     @RequestMapping("/model")
-    public String map(Model model){
+    public String map(Model model) {
         Users users = new Users();
         users.setId(2);
         users.setName("model");
-        model.addAttribute("users",users);
+        model.addAttribute("users", users);
         return "view";
     }
 
     @RequestMapping("/modelAndView")
-    public ModelAndView modelAndView(){
+    public ModelAndView modelAndView() {
         Users users = new Users();
         users.setId(3);
         users.setName("modelAndView");
@@ -49,7 +49,7 @@ public class ViewHandler {
     }
 
     @RequestMapping("/modelAndView2")
-    public ModelAndView modelAndView2(){
+    public ModelAndView modelAndView2() {
         Users users = new Users();
         users.setId(4);
         users.setName("modelAndView2");
@@ -61,7 +61,7 @@ public class ViewHandler {
     }
 
     @RequestMapping("/modelAndView3")
-    public ModelAndView modelAndView3(){
+    public ModelAndView modelAndView3() {
         Users users = new Users();
         users.setId(5);
         users.setName("modelAndView3");
@@ -71,7 +71,7 @@ public class ViewHandler {
     }
 
     @RequestMapping("/modelAndView4")
-    public ModelAndView modelAndView4(){
+    public ModelAndView modelAndView4() {
         Users users = new Users();
         users.setId(6);
         users.setName("modelAndView4");
@@ -82,58 +82,58 @@ public class ViewHandler {
     }
 
     @RequestMapping("/modelAndView5")
-    public ModelAndView modelAndView5(){
+    public ModelAndView modelAndView5() {
         Users users = new Users();
         users.setId(7);
         users.setName("modelAndView5");
-        Map<String,Users> usersMap = new HashMap<String, Users>();
-        usersMap.put("users",users);
-        ModelAndView modelAndView = new ModelAndView("view",usersMap);
+        Map<String, Users> usersMap = new HashMap<String, Users>();
+        usersMap.put("users", users);
+        ModelAndView modelAndView = new ModelAndView("view", usersMap);
         return modelAndView;
     }
 
     @RequestMapping("/modelAndView6")
-    public ModelAndView modelAndView6(){
+    public ModelAndView modelAndView6() {
         Users users = new Users();
         users.setId(8);
         users.setName("modelAndView6");
-        Map<String,Users> usersMap = new HashMap<String, Users>();
-        usersMap.put("users",users);
+        Map<String, Users> usersMap = new HashMap<String, Users>();
+        usersMap.put("users", users);
         View view = new InternalResourceView("/view.jsp");
-        ModelAndView modelAndView = new ModelAndView(view,usersMap);
+        ModelAndView modelAndView = new ModelAndView(view, usersMap);
         return modelAndView;
     }
 
     @RequestMapping("/modelAndView7")
-    public ModelAndView modelAndView7(){
+    public ModelAndView modelAndView7() {
         Users users = new Users();
         users.setId(9);
         users.setName("modelAndView7");
-        ModelAndView modelAndView = new ModelAndView("view","users",users);
+        ModelAndView modelAndView = new ModelAndView("view", "users", users);
         return modelAndView;
     }
 
     @RequestMapping("/modelAndView8")
-    public ModelAndView modelAndView8(){
+    public ModelAndView modelAndView8() {
         Users users = new Users();
         users.setId(10);
         users.setName("modelAndView8");
         View view = new InternalResourceView("/view.jsp");
-        ModelAndView modelAndView = new ModelAndView(view,"users",users);
+        ModelAndView modelAndView = new ModelAndView(view, "users", users);
         return modelAndView;
     }
 
     @RequestMapping("/request")
-    public String request(HttpServletRequest request){
+    public String request(HttpServletRequest request) {
         Users users = new Users();
         users.setId(11);
         users.setName("request");
-        request.setAttribute("users",users);
+        request.setAttribute("users", users);
         return "view";
     }
 
     @ModelAttribute
-    public Users getUsers(){
+    public Users getUsers() {
         Users users = new Users();
         users.setId(12);
         users.setName("getUsers");
@@ -141,36 +141,36 @@ public class ViewHandler {
     }
 
     @RequestMapping("/modelAndView1")
-    public String modelAndView1(){
+    public String modelAndView1() {
         return "view";
     }
 
     @RequestMapping("/session")
-    public String session(HttpServletRequest request){
+    public String session(HttpServletRequest request) {
         HttpSession httpSession = request.getSession();
         Users users = new Users();
         users.setId(13);
         users.setName("session");
-        httpSession.setAttribute("users",users);
+        httpSession.setAttribute("users", users);
         return "view";
     }
 
     @RequestMapping("/session2")
-    public String session(  HttpSession httpSession){
+    public String session(HttpSession httpSession) {
         Users users = new Users();
         users.setId(14);
         users.setName("session2");
-        httpSession.setAttribute("users",users);
+        httpSession.setAttribute("users", users);
         return "view";
     }
 
     @RequestMapping("/serlvetContext")
-    public String application(HttpServletRequest request){
+    public String application(HttpServletRequest request) {
         ServletContext servletContext = request.getServletContext();
         Users users = new Users();
         users.setId(15);
         users.setName("serlvetContext");
-        servletContext.setAttribute("users",users);
+        servletContext.setAttribute("users", users);
         return "view";
     }
 }

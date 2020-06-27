@@ -10,7 +10,7 @@ public class PYModelAndView {
     /**
      * 数据
      */
-    private Map<String,?> model;
+    private Map<String, ?> model;
 
     public PYModelAndView(String viewName, Map<String, ?> model) {
         this.viewName = viewName;

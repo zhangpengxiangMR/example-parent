@@ -11,10 +11,10 @@ import org.springframework.web.servlet.ModelAndView;
 public class TagHandler {
 
     @GetMapping("/get")
-    public ModelAndView get(){
+    public ModelAndView get() {
         ModelAndView modelAndView = new ModelAndView("tag");
-        Student student = new Student(1L,"张三",18);
-        modelAndView.addObject("student",student);
+        Student student = new Student(1L, "张三", 18);
+        modelAndView.addObject("student", student);
         return modelAndView;
     }
 

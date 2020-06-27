@@ -35,7 +35,7 @@ public class Test1 {
         }
         System.out.println("====查询一条数据====");
         Account byId = accountRepository.findById(4);
-        if(byId != null){
+        if (byId != null) {
             System.out.println(byId);
         }
         sqlSession.close();

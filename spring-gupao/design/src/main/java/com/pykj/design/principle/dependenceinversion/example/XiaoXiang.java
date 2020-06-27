@@ -20,7 +20,7 @@ public class XiaoXiang {
         this.iCourse = iCourse;
     }
 
-    public void study(){
+    public void study() {
         iCourse.study();
     }
 

@@ -7,8 +7,8 @@ public class Test {
 
 
     private static String toLowerFirstCase(String simpleName) {
-        char [] chars = simpleName.toCharArray();
-        chars[0] += 32 ;
+        char[] chars = simpleName.toCharArray();
+        chars[0] += 32;
         return String.valueOf(chars);
     }
 

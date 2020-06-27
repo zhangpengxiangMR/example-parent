@@ -5,7 +5,7 @@ package com.pykj.ykz.chapter4.intercept;
  * @author: zhangpengxiang
  * @time: 2020/4/21 10:57
  */
-public class MyInterceptor implements Interceptor{
+public class MyInterceptor implements Interceptor {
     @Override
     public boolean before() {
         System.out.println("before");

@@ -15,13 +15,13 @@ public class Invocation {
 
     private Object target;
 
-    public Invocation( Object target,Method method,Object[] params) {
+    public Invocation(Object target, Method method, Object[] params) {
         this.params = params;
         this.method = method;
         this.target = target;
     }
 
-    public Object proceed() throws Exception{
-        return method.invoke(target,params);
+    public Object proceed() throws Exception {
+        return method.invoke(target, params);
     }
 }

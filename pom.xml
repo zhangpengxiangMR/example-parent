@@ -14,6 +14,7 @@
         <module>spring-boot-yangkaizhen</module>
         <module>spring-gupao</module>
         <module>spring-ningnan</module>
+        <module>spring-gupao/application</module>
     </modules>
 
     <properties>

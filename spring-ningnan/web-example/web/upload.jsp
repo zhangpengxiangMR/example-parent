@@ -11,10 +11,10 @@
     <title>upload</title>
 </head>
 <body>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="text" name="desc"/><br/><br/>
-        <input type="file" name="file"/><br/><br/>
-        <input type="submit" value="提交"/>
-    </form>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="desc"/><br/><br/>
+    <input type="file" name="file"/><br/><br/>
+    <input type="submit" value="提交"/>
+</form>
 </body>
 </html>

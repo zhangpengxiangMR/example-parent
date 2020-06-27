@@ -6,10 +6,10 @@ public class Test {
         Cal cal = new CalImpl();
         MyInvocationHandler myInvocationHandler = new MyInvocationHandler();
         Cal cal1 = (Cal) myInvocationHandler.bind(cal);
-        cal1.add(1,1);
-        cal1.sub(2,1);
-        cal1.mul(2,3);
-        cal1.div(6,2);
+        cal1.add(1, 1);
+        cal1.sub(2, 1);
+        cal1.mul(2, 3);
+        cal1.div(6, 2);
 
     }
 

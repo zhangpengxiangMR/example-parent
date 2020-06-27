@@ -33,21 +33,22 @@ public class PYApplicationContext implements PYBeanFactory {
 
     private PYBeanDefinitionReader reader;
 
-    /**     * key:beanName，value:BeanWrapper
+    /**
+     * key:beanName，value:BeanWrapper
      */
-    private Map<String,PYBeanWrapper> factoryBeanInstanceCache = new HashMap<>();
+    private Map<String, PYBeanWrapper> factoryBeanInstanceCache = new HashMap<>();
 
     /**
      * key:Beanname,value:存储对象实例化对象
      */
-    private Map<String,Object> factoryBeanObjectCache = new HashMap<>();
+    private Map<String, Object> factoryBeanObjectCache = new HashMap<>();
 
     public PYApplicationContext(String... configLocations) {
         //this.configLocations = configLocations;
         //1、加载配置文件
         reader = new PYBeanDefinitionReader(configLocations);
         //2、解析配置文件，封装成BeanDefinition
-        List<PYBeanDefinition> beanDefiinitions =  reader.loadBeanDefinitions();
+        List<PYBeanDefinition> beanDefiinitions = reader.loadBeanDefinitions();
         //3、把BeanDefinition缓存起来
         try {
             regitry.doRegistBeanDefinition(beanDefiinitions);
@@ -68,21 +69,22 @@ public class PYApplicationContext implements PYBeanFactory {
 
     /**
      * 调用GetBean进行Bean的初始化阶段
+     *
      * @param beanName
      * @return
      */
     @Override
-    public Object getBean(String beanName){
+    public Object getBean(String beanName) {
         //1、获取BeanDefinition配置
         PYBeanDefinition pyBeanDefinition = this.regitry.beanDefinitionMap.get(beanName);
         //2、反射实例化newInstance()
-        Object instance = instantiateBean(beanName,pyBeanDefinition);
+        Object instance = instantiateBean(beanName, pyBeanDefinition);
         //3、封装成一个BeanWrapper
         PYBeanWrapper pyBeanWrapper = new PYBeanWrapper(instance);
         //4、保存到IoC容器
-        factoryBeanInstanceCache.put(beanName,pyBeanWrapper);
+        factoryBeanInstanceCache.put(beanName, pyBeanWrapper);
         //5、执行依赖注入
-        populateBean(beanName,pyBeanDefinition,pyBeanWrapper);
+        populateBean(beanName, pyBeanDefinition, pyBeanWrapper);
         return pyBeanWrapper.getWrapperInstance();
     }
 
@@ -99,29 +101,31 @@ public class PYApplicationContext implements PYBeanFactory {
         Class<?> clazz = beanWrapper.getWrapperClass();
 
         //在Spring中@Component
-        if(!(clazz.isAnnotationPresent(PYController.class) || clazz.isAnnotationPresent(PYService.class))){
+        if (!(clazz.isAnnotationPresent(PYController.class) || clazz.isAnnotationPresent(PYService.class))) {
             return;
         }
 
         //把所有的包括private/protected/default/public 修饰字段都取出来
         for (Field field : clazz.getDeclaredFields()) {
-            if(!field.isAnnotationPresent(PYAutowired.class)){ continue; }
+            if (!field.isAnnotationPresent(PYAutowired.class)) {
+                continue;
+            }
 
             PYAutowired autowired = field.getAnnotation(PYAutowired.class);
 
             //如果用户没有自定义的beanName，就默认根据类型注入
             String autowiredBeanName = autowired.value().trim();
-            if("".equals(autowiredBeanName)){
+            if ("".equals(autowiredBeanName)) {
                 //field.getType().getName() 获取字段的类型
                 autowiredBeanName = field.getType().getName();
             }
             //暴力访问
             field.setAccessible(true);
             try {
-                if(this.factoryBeanInstanceCache.get(autowiredBeanName) == null){
+                if (this.factoryBeanInstanceCache.get(autowiredBeanName) == null) {
                     continue;
                 }
-                field.set(instance,this.factoryBeanInstanceCache.get(autowiredBeanName).getWrapperInstance());
+                field.set(instance, this.factoryBeanInstanceCache.get(autowiredBeanName).getWrapperInstance());
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
                 continue;
@@ -131,6 +135,7 @@ public class PYApplicationContext implements PYBeanFactory {
 
     /**
      * 创建真正的实例化对象
+     *
      * @param beanName
      * @param pyBeanDefinition
      * @return
@@ -139,9 +144,9 @@ public class PYApplicationContext implements PYBeanFactory {
         String className = pyBeanDefinition.getBeanClassName();
         Object instance = null;
         try {
-            if(this.factoryBeanObjectCache.containsKey(beanName)) {
+            if (this.factoryBeanObjectCache.containsKey(beanName)) {
                 instance = this.factoryBeanObjectCache.get(beanName);
-            }else {
+            } else {
                 Class<?> clazz = Class.forName(className);
                 instance = clazz.newInstance();
 
@@ -150,11 +155,11 @@ public class PYApplicationContext implements PYBeanFactory {
                 PYAdvisedSupport config = instantionAopConfig(pyBeanDefinition);
                 config.setTargetClass(clazz);
                 config.setTarget(instance);
-                if(config.pointCutMath()){
+                if (config.pointCutMath()) {
                     instance = new PYJdkDynamicAopProxy(config).getProxy();
                 }
                 //结束AOP
-                this.factoryBeanObjectCache.put(beanName,instance);
+                this.factoryBeanObjectCache.put(beanName, instance);
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -180,12 +185,13 @@ public class PYApplicationContext implements PYBeanFactory {
     }
 
     @Override
-    public Object getBean(Class beanClass){
+    public Object getBean(Class beanClass) {
         return getBean(beanClass.getName());
     }
 
     /**
      * 获取BeanDefinition
+     *
      * @return
      */
     public int getBeanDefiitionCount() {

@@ -19,17 +19,17 @@ public class MyAirPlane {
 
     //在构造方法之后调用这个方法
     @PostConstruct
-    public void addOil(){
+    public void addOil() {
         System.out.println("飞机起飞前加油");
     }
 
-    public void run(){
+    public void run() {
         System.out.println("飞机空中巡航");
     }
 
     //销毁之前调用这个方法
     @PreDestroy
-    public void close(){
+    public void close() {
         System.out.println("飞机落地熄火");
     }
 }

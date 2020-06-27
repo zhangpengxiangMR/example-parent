@@ -15,10 +15,10 @@ public class Bird {
      * 3、支持从配置文件中取值
      */
     @Value("鹦鹉")
-    private String neme ;
+    private String neme;
 
-        @Value("#{9-5}")
-        private int age;
+    @Value("#{9-5}")
+    private int age;
 
     @Value("${bird.color}")
     private String color;

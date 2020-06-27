@@ -37,7 +37,7 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                   <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
             <!--解决jar启动找不见主类-->
@@ -50,8 +50,6 @@
             </plugin>
         </plugins>
     </build>
-
-
 
 
 </project>

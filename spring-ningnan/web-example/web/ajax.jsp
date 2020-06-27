@@ -11,13 +11,12 @@
     <title>ajax</title>
     <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
     <script type="text/javascript">
-        $(function(){
+        $(function () {
             alert(123);
         })
     </script>
 </head>
 <body>
-
 
 
 </body>

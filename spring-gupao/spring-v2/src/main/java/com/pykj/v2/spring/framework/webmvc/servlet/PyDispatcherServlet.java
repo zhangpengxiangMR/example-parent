@@ -43,7 +43,7 @@ public class PyDispatcherServlet extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             try {
-                processDispatchResult(req,resp,new PYModelAndView("500"));
+                processDispatchResult(req, resp, new PYModelAndView("500"));
             } catch (Exception ex) {
                 ex.printStackTrace();
                 resp.getWriter().write("500 Exception Detail:" + Arrays.toString(e.getStackTrace()));
@@ -71,17 +71,23 @@ public class PyDispatcherServlet extends HttpServlet {
     }
 
     private PYHandlerAdapter getHandlerApadter(PYHandlerMapping handlerMapping) {
-        if(this.handlerAdapters.isEmpty()){return null;}
+        if (this.handlerAdapters.isEmpty()) {
+            return null;
+        }
         return this.handlerAdapters.get(handlerMapping);
     }
 
     private void processDispatchResult(HttpServletRequest req, HttpServletResponse resp, PYModelAndView mv) throws Exception {
-        if(mv == null ){return;}
-        if(this.viewResolvers.isEmpty()){return;}
+        if (mv == null) {
+            return;
+        }
+        if (this.viewResolvers.isEmpty()) {
+            return;
+        }
         for (PYViewResolver viewResolver : this.viewResolvers) {
             PYView view = viewResolver.resolveViewName(mv.getViewName());
             //直接往浏览器输出
-            view.render(mv.getModel(),req,resp);
+            view.render(mv.getModel(), req, resp);
             return;
         }
 
@@ -154,7 +160,7 @@ public class PyDispatcherServlet extends HttpServlet {
 
     private void initHandlerAdapters(PYApplicationContext context) {
         for (PYHandlerMapping handlerMapping : handlerMappings) {
-            this.handlerAdapters.put(handlerMapping,new PYHandlerAdapter());
+            this.handlerAdapters.put(handlerMapping, new PYHandlerAdapter());
         }
     }
 

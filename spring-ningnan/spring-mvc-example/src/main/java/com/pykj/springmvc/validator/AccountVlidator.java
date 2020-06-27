@@ -11,7 +11,7 @@ public class AccountVlidator implements Validator {
     }
 
     public void validate(Object o, Errors errors) {
-        ValidationUtils.rejectIfEmpty(errors,"name",null,"用户名不能为空");
-        ValidationUtils.rejectIfEmpty(errors,"password",null,"密码不能为空");
+        ValidationUtils.rejectIfEmpty(errors, "name", null, "用户名不能为空");
+        ValidationUtils.rejectIfEmpty(errors, "password", null, "密码不能为空");
     }
 }

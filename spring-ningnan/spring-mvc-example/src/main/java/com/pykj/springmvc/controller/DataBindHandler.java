@@ -13,38 +13,38 @@ public class DataBindHandler {
 
     @RequestMapping("/baseType")
     @ResponseBody
-    public String baseType(int i ){
+    public String baseType(int i) {
         System.out.println("进入baseType()方法");
         return i + "";
     }
 
     @RequestMapping("/packageType")
     @ResponseBody
-    public String packageType(@RequestParam(value = "num",required = false,defaultValue = "10000") Integer i){
+    public String packageType(@RequestParam(value = "num", required = false, defaultValue = "10000") Integer i) {
         System.out.println("进入packageType()方法");
         return i + "";
     }
 
     @RequestMapping("/array")
-    public String array(String[] name){
+    public String array(String[] name) {
         String str = Arrays.toString(name);
-        System.out.println("进入arry()方法,返回值为" +str);
+        System.out.println("进入arry()方法,返回值为" + str);
         return str;
     }
 
     @RequestMapping("/list")
-    public String list(UsersList usersList){
+    public String list(UsersList usersList) {
         StringBuilder str = new StringBuilder();
-        for (Users user: usersList.getUsers()) {
+        for (Users user : usersList.getUsers()) {
             str.append(user);
         }
         return str.toString();
     }
 
     @RequestMapping("/map")
-    public String map(UserMap userMap){
+    public String map(UserMap userMap) {
         StringBuilder builder = new StringBuilder();
-        for (String key:userMap.getUsers().keySet()) {
+        for (String key : userMap.getUsers().keySet()) {
             Users users = userMap.getUsers().get(key);
             builder.append(users);
         }
@@ -52,7 +52,7 @@ public class DataBindHandler {
     }
 
     @RequestMapping("/json")
-    public Users json(@RequestBody Users users){
+    public Users json(@RequestBody Users users) {
         System.out.println(users);
         users.setId(11);
         users.setName("王五");

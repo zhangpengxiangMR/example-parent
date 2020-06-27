@@ -4,55 +4,53 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
-@ConfigurationProperties( "database")
+@ConfigurationProperties("database")
 public class DataBasePropertiesConfiguration {
 
-	private String driverName = null;
+    private String driverName = null;
 
-	private String url = null;
+    private String url = null;
 
-	private String username = null;
+    private String username = null;
 
-	private String password = null;
-	
-	public void setDriverName(String driverName) {
-		System.out.println("Configuration:" + driverName);
-		this.driverName = driverName;
-	}
-	
-	public void setUrl(String url) {
-		System.out.println("Configuration:" + url);
-		this.url = url;
-	}
+    private String password = null;
+
+    public void setDriverName(String driverName) {
+        System.out.println("Configuration:" + driverName);
+        this.driverName = driverName;
+    }
+
+    public void setUrl(String url) {
+        System.out.println("Configuration:" + url);
+        this.url = url;
+    }
 
 
-	public void setUsername(String username) {
-		System.out.println("Configuration:" + username);
-		this.username = username;
-	}
+    public void setUsername(String username) {
+        System.out.println("Configuration:" + username);
+        this.username = username;
+    }
 
-	public void setPassword(String password) {
-		System.out.println("Configuration:" + password);
-		this.password = password;
-	}
-	
-	public String getDriverName() {
-		return driverName;
-	}
+    public void setPassword(String password) {
+        System.out.println("Configuration:" + password);
+        this.password = password;
+    }
 
-	public String getUrl() {
-		return url;
-	}
+    public String getDriverName() {
+        return driverName;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public String getUrl() {
+        return url;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	
-	
-	
+    public String getPassword() {
+        return password;
+    }
+
+
 }

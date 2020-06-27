@@ -11,8 +11,7 @@ import java.util.List;
 import java.util.Properties;
 
 /**
- *
- *  职责：加载配置文件
+ * 职责：加载配置文件
  */
 public class PYBeanDefinitionReader {
 
@@ -34,12 +33,13 @@ public class PYBeanDefinitionReader {
         doScanner(contextConfig.getProperty("scanPackage"));
     }
 
-    public Properties getConfig(){
+    public Properties getConfig() {
         return this.contextConfig;
     }
 
     /**
      * 通过.class类的全类名得到一个clazz，把beanName和beanClassName保存到PYBeanDefinition中
+     *
      * @return
      */
     public List<PYBeanDefinition> loadBeanDefinitions() {
@@ -47,17 +47,19 @@ public class PYBeanDefinitionReader {
         for (String regitryBeanClass : regitryBeanClasses) {
             try {
                 Class<?> clazz = Class.forName(regitryBeanClass);
-                if(clazz.isInterface()){continue;}
+                if (clazz.isInterface()) {
+                    continue;
+                }
                 String beanName = toLowerFirstCase(clazz.getSimpleName());
                 String beanClassName = clazz.getName();
                 System.out.println("beanName输出：" + beanName);
                 System.out.println("beanClassName输出：" + beanClassName);
                 //1、默认是类名首字母小写
-                result.add(doCreateBeanDefinition(beanName,beanClassName));
+                result.add(doCreateBeanDefinition(beanName, beanClassName));
                 //2、自定义
                 //3、接口注入
                 for (Class<?> i : clazz.getInterfaces()) {
-                    result.add(doCreateBeanDefinition(i.getName(),clazz.getName()));
+                    result.add(doCreateBeanDefinition(i.getName(), clazz.getName()));
                 }
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
@@ -75,16 +77,17 @@ public class PYBeanDefinitionReader {
 
     /**
      * 读取web.xml配置文件中的classpath:application.properties，把结果封装到contextConfig中，也就是一个Properties文件
+     *
      * @param contextConfigLocation
      */
     private void doLoadConfig(String contextConfigLocation) {
-        InputStream is = this.getClass().getClassLoader().getResourceAsStream(contextConfigLocation.replaceAll("classpath:",""));
+        InputStream is = this.getClass().getClassLoader().getResourceAsStream(contextConfigLocation.replaceAll("classpath:", ""));
         try {
             contextConfig.load(is);
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
-            if(null != is){
+        } finally {
+            if (null != is) {
                 try {
                     is.close();
                 } catch (IOException e) {
@@ -96,19 +99,22 @@ public class PYBeanDefinitionReader {
 
     /**
      * scanPackage=com.pykj.v2.demo，扫描所有配置的包路径，把.class文件保存到regitryBeanClasses
+     *
      * @param scanPackage
      */
     private void doScanner(String scanPackage) {
         //jar 、 war 、zip 、rar
-        URL url = this.getClass().getClassLoader().getResource("/" + scanPackage.replaceAll("\\.","/"));
+        URL url = this.getClass().getClassLoader().getResource("/" + scanPackage.replaceAll("\\.", "/"));
         File classPath = new File(url.getFile());
 
         //当成是一个ClassPath文件夹
         for (File file : classPath.listFiles()) {
-            if(file.isDirectory()){
+            if (file.isDirectory()) {
                 doScanner(scanPackage + "." + file.getName());
-            }else {
-                if(!file.getName().endsWith(".class")){continue;}
+            } else {
+                if (!file.getName().endsWith(".class")) {
+                    continue;
+                }
                 //全类名 = 包名.类名
                 String className = (scanPackage + "." + file.getName().replace(".class", ""));
                 regitryBeanClasses.add(className);
@@ -117,7 +123,7 @@ public class PYBeanDefinitionReader {
     }
 
     private String toLowerFirstCase(String simpleName) {
-        char [] chars = simpleName.toCharArray();
+        char[] chars = simpleName.toCharArray();
         chars[0] += 32;
         return String.valueOf(chars);
     }

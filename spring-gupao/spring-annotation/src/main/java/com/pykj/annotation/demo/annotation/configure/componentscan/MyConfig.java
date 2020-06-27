@@ -19,15 +19,14 @@ import org.springframework.context.annotation.FilterType;
  * @time: 2020/4/13 16:53
  */
 @Configuration
-@ComponentScan(value = {"com.pykj.annotation.project","com.pykj.annotation.projectdemo"},
+@ComponentScan(value = {"com.pykj.annotation.project", "com.pykj.annotation.projectdemo"},
         useDefaultFilters = false,
         //includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION,value = {PYController.class, Component.class})}
         //includeFilters = {@ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,value = MyController.class)}
-        includeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM,value = MyTypeFilter.class)}
-        )
+        includeFilters = {@ComponentScan.Filter(type = FilterType.CUSTOM, value = MyTypeFilter.class)}
+)
 //@ComponentScans(value = {@ComponentScan("com.pykj.annotation.project"), @ComponentScan("com.pykj.annotation.projectdemo")})
 public class MyConfig {
-
 
 
 }

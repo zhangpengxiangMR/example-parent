@@ -15,7 +15,7 @@ public class UserRepository {
 
     private final AtomicLong idGenerator = new AtomicLong();
 
-    public Boolean save(User user){
+    public Boolean save(User user) {
         //并发包
         long id = idGenerator.incrementAndGet();
         System.out.println("获取id" + id);
@@ -23,7 +23,7 @@ public class UserRepository {
         //map.put(1,"3")
         //第二个map.put会返回第一个map.put的value
         user.setId(id);
-        return repository.put(id,user) == null;
+        return repository.put(id, user) == null;
     }
 
     public Collection<User> findAll() {

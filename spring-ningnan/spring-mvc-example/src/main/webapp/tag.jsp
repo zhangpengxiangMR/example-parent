@@ -13,12 +13,12 @@
 </head>
 <body>
 
-    <h1>学生信息</h1>
-    <form:form modelAttribute="student">
-        学生ID:<form:input path="id"/><br/>
-        学生姓名:<form:input path="name"/><br/>
-        学生年龄:<form:input path="age"/><br/>
-        <input type="submit" value="提交"/>
-    </form:form>
+<h1>学生信息</h1>
+<form:form modelAttribute="student">
+    学生ID:<form:input path="id"/><br/>
+    学生姓名:<form:input path="name"/><br/>
+    学生年龄:<form:input path="age"/><br/>
+    <input type="submit" value="提交"/>
+</form:form>
 </body>
 </html>

@@ -2,9 +2,9 @@ package com.pykj.spring.boot.xmg.web.domain;
 
 public class User {
 
-    private Long id ;
+    private Long id;
 
-    private String name ;
+    private String name;
 
     public Long getId() {
         return id;

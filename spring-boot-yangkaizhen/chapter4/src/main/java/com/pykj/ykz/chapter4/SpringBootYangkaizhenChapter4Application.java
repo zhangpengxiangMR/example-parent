@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 public class SpringBootYangkaizhenChapter4Application {
 
     @Bean(name = "myAspect")
-    public MyAspect initMyAspect(){
+    public MyAspect initMyAspect() {
         return new MyAspect();
     }
 

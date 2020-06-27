@@ -9,14 +9,16 @@ public class PYViewResolver {
     private File tempateRootDir;
 
     public PYViewResolver(String templateRoot) {
-        String tempateRootPath  = this.getClass().getClassLoader().getResource(templateRoot).getFile();
-        tempateRootDir =   new File(tempateRootPath);
+        String tempateRootPath = this.getClass().getClassLoader().getResource(templateRoot).getFile();
+        tempateRootDir = new File(tempateRootPath);
     }
 
-    public PYView resolveViewName(String viewName){
-        if(null == viewName || "".equals(viewName.trim())){return null;}
-        viewName = viewName.endsWith(DEFAULT_TEMPLATE_SUFFIX)? viewName : (viewName + DEFAULT_TEMPLATE_SUFFIX);
-        File templateFile = new File((tempateRootDir.getPath() + "/" + viewName).replaceAll("/+","/"));
+    public PYView resolveViewName(String viewName) {
+        if (null == viewName || "".equals(viewName.trim())) {
+            return null;
+        }
+        viewName = viewName.endsWith(DEFAULT_TEMPLATE_SUFFIX) ? viewName : (viewName + DEFAULT_TEMPLATE_SUFFIX);
+        File templateFile = new File((tempateRootDir.getPath() + "/" + viewName).replaceAll("/+", "/"));
         return new PYView(templateFile);
     }
 }

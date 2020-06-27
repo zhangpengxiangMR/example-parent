@@ -22,9 +22,9 @@ public class MyConfig {
      */
     @Lazy
     @Bean(value = "person")
-    public MyPerson person1(){
+    public MyPerson person1() {
         System.out.println("将对象添加到IoC容器中");
-        return new MyPerson("张鹏祥",19);
+        return new MyPerson("张鹏祥", 19);
     }
 
 }

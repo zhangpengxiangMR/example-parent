@@ -12,14 +12,14 @@ public class MyTest {
 
 
     /**
-     *  首先取出方法名称作为Bean的name
-     *  优先取出自定义的Bean的name
+     * 首先取出方法名称作为Bean的name
+     * 优先取出自定义的Bean的name
      */
     @Test
-    public void test(){
+    public void test() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
-        Object person1= context.getBean("person");
+        Object person1 = context.getBean("person");
         Object person2 = context.getBean("person");
         System.out.println(person1 == person2);
 

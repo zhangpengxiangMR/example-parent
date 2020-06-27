@@ -23,8 +23,8 @@ public class Test4 {
         Customer customer = customerRepository.findById(1);
         System.out.println(customer);
         System.out.println("====查询全部====");
-        List<Customer> customerList =  customerRepository.findAll();
-        for (Customer c:customerList) {
+        List<Customer> customerList = customerRepository.findAll();
+        for (Customer c : customerList) {
             System.out.println(c);
         }
     }

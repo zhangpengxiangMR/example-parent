@@ -5,7 +5,7 @@ package com.pykj.design.principle.interfacesegregation.example2;
  * @author: zhangpengxiang
  * @time: 2020/4/20 7:59
  */
-public class Bird  implements IEatAnimal,IFlyAnimal,ISwimAnimal{
+public class Bird implements IEatAnimal, IFlyAnimal, ISwimAnimal {
     public void eat() {
 
     }

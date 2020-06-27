@@ -15,8 +15,8 @@ public class Test {
         SqlSessionFactory sqlSessionFactory = sqlSessionFactoryBuilder.build(inputStream);
         SqlSession sqlSession = sqlSessionFactory.openSession();
         String statement = "com.pykj.example.mapper.AccountMapper.save";
-        Account account = new Account(1,"张三","a123",25);
-        sqlSession.insert(statement,account);
+        Account account = new Account(1, "张三", "a123", 25);
+        sqlSession.insert(statement, account);
         sqlSession.commit();
     }
 

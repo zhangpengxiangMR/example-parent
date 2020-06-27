@@ -7,7 +7,7 @@ package com.pykj.design.principle.lawofdemeter.example1;
  */
 public class Boss {
 
-    public void commandCheckNumber(TeamLeader teamLeader){
+    public void commandCheckNumber(TeamLeader teamLeader) {
         teamLeader.checkNumberOfCourse();
     }
 

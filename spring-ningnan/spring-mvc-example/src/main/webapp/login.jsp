@@ -13,11 +13,11 @@
     <title>Title</title>
 </head>
 <body>
-    <form:form modelAttribute="account" action="/validator/login" method="post">
-        姓名：<form:input path="name"/><form:errors path="name"/><br/>
-        密码：<form:input path="password"/><form:errors path="password"/><br/>
-        <input type="submit" value="提交"/>
+<form:form modelAttribute="account" action="/validator/login" method="post">
+    姓名：<form:input path="name"/><form:errors path="name"/><br/>
+    密码：<form:input path="password"/><form:errors path="password"/><br/>
+    <input type="submit" value="提交"/>
 
-    </form:form>
+</form:form>
 </body>
 </html>

@@ -7,12 +7,12 @@ package com.pykj.design.patterns.factorypattern.simplefactorypattern.excellent;
  */
 public class CourseFactory {
 
-    public static ICourse create(String name){
-        if("java".equals(name)){
+    public static ICourse create(String name) {
+        if ("java".equals(name)) {
             return new JavaCourse();
-        }else if("python".equals(name)) {
+        } else if ("python".equals(name)) {
             return new PythonCourse();
-        }else {
+        } else {
             return null;
         }
     }

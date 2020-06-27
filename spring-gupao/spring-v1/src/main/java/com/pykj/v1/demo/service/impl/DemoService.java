@@ -9,9 +9,9 @@ import com.pykj.v1.demo.service.IDemoService;
 @PYService
 public class DemoService implements IDemoService {
 
-	@Override
-	public String get(String name) {
-		return "My name is " + name + ",from service.";
-	}
+    @Override
+    public String get(String name) {
+        return "My name is " + name + ",from service.";
+    }
 
 }

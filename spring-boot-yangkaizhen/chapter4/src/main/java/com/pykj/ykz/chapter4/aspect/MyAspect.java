@@ -37,6 +37,7 @@ public class MyAspect {
 
     /**
      * 环绕通知
+     *
      * @param proceedingJoinPoint
      */
     @Around("pointCut()")
@@ -56,6 +57,7 @@ public class MyAspect {
         log.info("around after");
         return null;
     }
+
     /**
      * 处理返回对象
      */
@@ -64,7 +66,7 @@ public class MyAspect {
         if (obj instanceof Person) {
             Person resultVO = (Person) obj;
             resultVO.setName("小龙人");
-            log.info("修改后："+ resultVO);
+            log.info("修改后：" + resultVO);
         }
     }
 
@@ -86,11 +88,12 @@ public class MyAspect {
 
     /**
      * 事前通知
+     *
      * @param point
      * @param user
      */
     @Before("pointCut() && args(user)")
-    public void before(JoinPoint point, User user){
+    public void before(JoinPoint point, User user) {
         log.info("User对象打印：" + user);
         Object[] args = point.getArgs();
         log.info(" point.getArgs()打印：" + Arrays.toString(args));
@@ -99,10 +102,11 @@ public class MyAspect {
 
     /**
      * 事后通知
+     *
      * @param point
      */
     @After("pointCut()")
-    public void after(JoinPoint point){
+    public void after(JoinPoint point) {
         Object[] args = point.getArgs();
         log.info(" point.getArgs()打印：" + Arrays.toString(args));
         log.info("after...");
@@ -110,10 +114,11 @@ public class MyAspect {
 
     /**
      * 没有异常才会执行
+     *
      * @param point
      * @param ret
      */
-    @AfterReturning(value = "pointCut()",returning ="ret")
+    @AfterReturning(value = "pointCut()", returning = "ret")
     public Object afterReturning(JoinPoint point, Object ret) {
         Object[] args = point.getArgs();
         log.info(" point.getArgs()打印：" + Arrays.toString(args));
@@ -130,6 +135,7 @@ public class MyAspect {
 
     /**
      * 异常执行
+     *
      * @param point
      */
     @AfterThrowing("pointCut()")

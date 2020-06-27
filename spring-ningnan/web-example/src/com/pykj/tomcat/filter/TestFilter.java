@@ -19,7 +19,7 @@ public class TestFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("执行TestFilter的doFilter()方法...");
-        filterChain.doFilter(servletRequest,servletResponse);
+        filterChain.doFilter(servletRequest, servletResponse);
         System.err.println("doFilter结束.............");
         System.err.println("doFilter结束.............");
     }

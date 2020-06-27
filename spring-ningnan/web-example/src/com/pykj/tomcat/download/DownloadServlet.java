@@ -17,7 +17,7 @@ public class DownloadServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         OutputStream outputStream = null;
         InputStream inputStream = null;
-        try{
+        try {
             //设置响应方式
             resp.setContentType("application/X-msdownload");
             String fileName = "20200303205702.jpg";
@@ -30,15 +30,15 @@ public class DownloadServlet extends HttpServlet {
             byte[] bytes = new byte[1024];
             int count = inputStream.read(bytes);
             while (count != -1) {
-                outputStream.write(bytes,0,count);
+                outputStream.write(bytes, 0, count);
                 outputStream.flush();
                 count = inputStream.read(bytes);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                if(inputStream != null) {
+                if (inputStream != null) {
                     inputStream.close();
                 }
             } catch (IOException e) {

@@ -7,7 +7,7 @@ package com.pykj.design.principle.compositereuse.example;
  */
 public class DBConnection {
 
-    public String getConnection(){
+    public String getConnection() {
         return "MySql 数据库连接";
     }
 

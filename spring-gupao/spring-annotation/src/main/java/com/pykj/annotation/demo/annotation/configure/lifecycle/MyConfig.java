@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @time: 2020/4/14 17:00
  */
 @Configuration
-@ComponentScans({@ComponentScan("com.pykj.annotation.project"),@ComponentScan("com.pykj.annotation.demo.annotation.configure.lifecycle")})
+@ComponentScans({@ComponentScan("com.pykj.annotation.project"), @ComponentScan("com.pykj.annotation.demo.annotation.configure.lifecycle")})
 public class MyConfig {
 
    /* @Bean(initMethod = "addOil",destroyMethod = "close")

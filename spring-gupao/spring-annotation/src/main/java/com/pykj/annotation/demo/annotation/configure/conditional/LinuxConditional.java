@@ -17,8 +17,8 @@ public class LinuxConditional implements Condition {
         ConfigurableListableBeanFactory beanFactory = context.getBeanFactory();
         Environment environment = context.getEnvironment();
         String osName = environment.getProperty("os.name");
-        System.out.println("----" +osName + "----");
-        if("Linux".equals(osName)){
+        System.out.println("----" + osName + "----");
+        if ("Linux".equals(osName)) {
             return true;
         }
         return false;

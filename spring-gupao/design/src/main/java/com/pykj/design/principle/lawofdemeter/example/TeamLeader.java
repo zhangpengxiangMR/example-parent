@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class TeamLeader {
 
-    public void checkNumberOfCourse(List<Course> courseList){
+    public void checkNumberOfCourse(List<Course> courseList) {
         System.out.println("目前已发布的课程数量是：" + courseList.size());
     }
 

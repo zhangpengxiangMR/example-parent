@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Map;
 
-public class PYJdkDynamicAopProxy implements PYAopProxy,InvocationHandler {
+public class PYJdkDynamicAopProxy implements PYAopProxy, InvocationHandler {
 
     private PYAdvisedSupport config;
 
@@ -19,15 +19,15 @@ public class PYJdkDynamicAopProxy implements PYAopProxy,InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Map<String, PYAdvice> advices = config.getAdvices(method,null);
+        Map<String, PYAdvice> advices = config.getAdvices(method, null);
         Object returnValue;
         try {
             invokeAdivce(advices.get("before"));
 
-            returnValue = method.invoke(this.config.getTarget(),args);
+            returnValue = method.invoke(this.config.getTarget(), args);
 
             invokeAdivce(advices.get("after"));
-        }catch (Exception e){
+        } catch (Exception e) {
             invokeAdivce(advices.get("afterThrow"));
             throw e;
         }
@@ -46,6 +46,7 @@ public class PYJdkDynamicAopProxy implements PYAopProxy,InvocationHandler {
 
     /**
      * 创建当前类的代理对象
+     *
      * @return
      */
     @Override

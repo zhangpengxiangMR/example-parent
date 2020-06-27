@@ -13,7 +13,7 @@ import org.springframework.core.env.Environment;
 public class MyTest {
 
     @Test
-    public void test(){
+    public void test() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         System.out.println(context.getBean("bird"));

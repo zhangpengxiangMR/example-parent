@@ -13,11 +13,11 @@
 </head>
 <body>
 
-    ${requestScope.users}
-    <hr/>
-    ${sessionScope.users}
-    <hr/>
-    ${applicationScope.users}
+${requestScope.users}
+<hr/>
+${sessionScope.users}
+<hr/>
+${applicationScope.users}
 
 </body>
 </html>

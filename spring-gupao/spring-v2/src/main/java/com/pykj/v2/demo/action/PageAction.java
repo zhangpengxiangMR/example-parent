@@ -12,8 +12,8 @@ import java.util.Map;
 
 /**
  * 公布接口url
- * @author Tom
  *
+ * @author Tom
  */
 @PYController
 @PYRequestMapping("/")
@@ -23,13 +23,13 @@ public class PageAction {
     IQueryService queryService;
 
     @PYRequestMapping("/first.html")
-    public PYModelAndView query(@PYRequestParam("teacher") String teacher, @PYRequestParam("da") String da){
+    public PYModelAndView query(@PYRequestParam("teacher") String teacher, @PYRequestParam("da") String da) {
         String result = queryService.query(teacher);
-        Map<String,Object> model = new HashMap<String,Object>();
+        Map<String, Object> model = new HashMap<String, Object>();
         model.put("teacher", teacher);
         model.put("data", result);
         model.put("token", "123456");
-        return new PYModelAndView("first.html",model);
+        return new PYModelAndView("first.html", model);
     }
 
 }

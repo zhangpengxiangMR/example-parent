@@ -8,8 +8,10 @@
                         userId="root"
                         password="zhang"
         />
-        <javaModelGenerator targetPackage="com.pykj.spring.generator.entity" targetProject="./spring-mybatis-example/src/main/java"/>
-        <javaClientGenerator targetPackage="com.pykj.spring.generator.repository" targetProject="./spring-mybatis-example/src/main/java"/>
+        <javaModelGenerator targetPackage="com.pykj.spring.generator.entity"
+                            targetProject="./spring-mybatis-example/src/main/java"/>
+        <javaClientGenerator targetPackage="com.pykj.spring.generator.repository"
+                             targetProject="./spring-mybatis-example/src/main/java"/>
 
         <table tableName="t_account" domainObjectName="Account"/>
     </context>

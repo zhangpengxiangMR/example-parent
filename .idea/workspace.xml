@@ -1,0 +1,1390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="spring-v2:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96264879-5c17-4f1d-89f8-f7896bed2a56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/chapter2_Web_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_Release.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/spring-example-parent.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo1/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo2/Excel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo2/Office.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo2/Word.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo3/Boy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo3/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo4/Hungry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo4/Lazy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo4/SingletonDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo5/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo5/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo5/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo5/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo6/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo6/Init.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo6/IocContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/application/src/main/resources/Spring-ioc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/concurrency/concurrency.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter1/CallableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter1/InterruptDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter1/RunnableDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter1/ThreadDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter1/ThreadStautsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-gupao/design/design.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web-example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/model/src/main/java/com/pykj/spring/boot/xmg/web/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/model/src/main/java/com/pykj/spring/boot/xmg/web/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/persistence/src/main/java/com/pykj/spring/boot/xmg/web/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/persistence/src/main/java/com/pykj/spring/boot/xmg/web/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/src/main/java/com/pykj/spring/boot/xmg/web/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/src/main/java/com/pykj/spring/boot/xmg/web/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/src/main/java/com/pykj/spring/boot/xmg/web/config/WebFluxConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/src/main/java/com/pykj/spring/boot/xmg/web/config/WebFluxConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/src/main/java/com/pykj/spring/boot/xmg/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-xiaomage/first-spring-boot-app/web/src/main/java/com/pykj/spring/boot/xmg/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/java/cpm/pykj/spring/boot/ykz/chapter2/Chapter2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/java/cpm/pykj/spring/boot/ykz/chapter2/Chapter2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/java/cpm/pykj/spring/boot/ykz/chapter2/main/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/java/cpm/pykj/spring/boot/ykz/chapter2/main/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/webapp/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter2/src/main/webapp/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/Chapter3Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/Chapter3Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/condition/DatabaseConditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/condition/DatabaseConditional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/datasource/DataSources.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/datasource/DataSources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/BeanPostProcessorExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/BeanPostProcessorExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/definition/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/definition/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/definition/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/pojo/definition/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/properties/DataBaseProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/properties/DataBaseProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/properties/DataBasePropertiesConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/properties/DataBasePropertiesConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/test/IoCTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/test/IoCTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/SpringBootYangkaizhenChapter4Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/SpringBootYangkaizhenChapter4Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/pojo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/pojo/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/validator/UserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/validator/UserValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/validator/impl/UserValidatorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/validator/impl/UserValidatorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/Interceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/Interceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/Invocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/InvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/InvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/MyInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/MyInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/ProxyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/ProxyBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/service/impl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/service/impl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/service/impl/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/service/impl/HelloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/test/TestProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/test/TestProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-yangkaizhen/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-yangkaizhen/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter3/VolatileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter3/VolatileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/patterns/factorypattern/simplefactorypattern/excellent/CourseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/patterns/factorypattern/simplefactorypattern/excellent/CourseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/compositereuse/example/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/compositereuse/example/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/compositereuse/example/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/compositereuse/example/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/compositereuse/example2/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/compositereuse/example2/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/example/ICourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/example/ICourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/example/Tom.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/example/Tom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/example/XiaoXiang.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/example/XiaoXiang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/dependenceinversion/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/interfacesegregation/example/IAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/interfacesegregation/example/IAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/interfacesegregation/example2/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/interfacesegregation/example2/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/interfacesegregation/example2/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/interfacesegregation/example2/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example/TeamLeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example1/Boss.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example1/Boss.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example1/TeamLeader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/lawofdemeter/example1/TeamLeader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/liskovsubstiution/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/liskovsubstiution/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/openclosed/example/JavaDiscountCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/openclosed/example/JavaDiscountCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/openclosed/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/openclosed/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example2/LiveCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example2/LiveCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example2/ReplayCourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example2/ReplayCourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example3/ICourse.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example3/ICourse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example3/ICourseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example3/ICourseInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example3/ICourseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/design/src/main/java/com/pykj/design/principle/singleresponsibility/example3/ICourseManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/componentscan/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/componentscan/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/componentscan/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/componentscan/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/componentscan/MyTypeFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/componentscan/MyTypeFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/LinuxConditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/LinuxConditional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/WinConditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/WinConditional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/configuration/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/configuration/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/configuration/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyImportBeanDefinitionRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyImportBeanDefinitionRegistrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyImportSelector.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyImportSelector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/imports/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lazy/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lazy/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lazy/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lazy/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lifecycle/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lifecycle/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lifecycle/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/lifecycle/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/scope/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/scope/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/scope/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/scope/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/aotuwired/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/aotuwired/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/aotuwired/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/aotuwired/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/primary/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/primary/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/propertysource/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/propertysource/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/propertysource/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/propertysource/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/qualifier/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/qualifier/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/resource/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/resource/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/value/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/value/MyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/value/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/value/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/xml/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/xml/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/Bird.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/Bird.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/MyAirPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/MyAirPlane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/MyCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/MyCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/MyPerson.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/entity/MyPerson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/service/MyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/project/service/MyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/demo/controller/DemoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/demo/controller/DemoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/demo/service/IDemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/demo/service/IDemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/demo/service/impl/DemoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/demo/service/impl/DemoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/annotation/PYRequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/annotation/PYRequestMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v1/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v1/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/action/MyAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/action/MyAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/action/PageAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/action/PageAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/aspect/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/aspect/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/IModifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/IModifyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/IQueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/IQueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/impl/ModifyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/impl/ModifyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/impl/QueryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/demo/service/impl/QueryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/annotation/PYRequestMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/annotation/PYRequestMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/PYCglibAopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/PYCglibAopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/PYJdkDynamicAopProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/PYJdkDynamicAopProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/support/PYAdvisedSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/support/PYAdvisedSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/beans/support/PYBeanDefinitionReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/beans/support/PYBeanDefinitionReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/beans/support/PYDefaultListableBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/beans/support/PYDefaultListableBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/context/PYApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/context/PYApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYHandlerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYHandlerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYHandlerMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYHandlerMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYModelAndView.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYModelAndView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYView.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYViewResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYViewResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PyDispatcherServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PyDispatcherServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/layouts/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/layouts/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/layouts/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/layouts/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/layouts/first.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/resources/layouts/first.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gupao/spring-v2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/repository/CustomerRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/repository/CustomerRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/repository/GoodsRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/repository/GoodsRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/repository/StudengRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/repository/StudengRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/GeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/GeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test7.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/java/com/pykj/mybatis/test/Test7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/resources/generatorDynamicConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/resources/generatorDynamicConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/mybatis-example/src/main/resources/mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/Cal.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/Cal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/LoggerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/LoggerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/MyInvocationHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/MyInvocationHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/entity/Hobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/entity/Hobby.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/ioc/ClassPathXmlApplicationContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/ioc/ClassPathXmlApplicationContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-example/src/test/java/com/pykj/spring/IocTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-example/src/test/java/com/pykj/spring/IocTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/Filers/SysCorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/Filers/SysCorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ConverterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ConverterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/DataBindHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/DataBindHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/HelloHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/HelloHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/RESTHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/RESTHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/TagHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/TagHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ValidatorHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ValidatorHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ViewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ViewHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/entity/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/entity/UserMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/entity/UserMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/validator/AccountVlidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/validator/AccountVlidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/download.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/download.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/js/jquery-3.4.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/js/jquery-3.4.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/json.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/json.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/show.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/show.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/tag.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/tag.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/uploads.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/uploads.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/webapp/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/ssm-example/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/ssm-example/src/main/resources/spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/ssm-example/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/ssm-example/src/main/resources/springmvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/out/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/out/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/c3p0-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/c3p0-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/datasourrce/DataSourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/datasourrce/DataSourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/dautils/DbUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/dautils/DbUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/download/DownloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/download/DownloadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/filter/EncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/filter/EncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/filter/TestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/filter/TestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/jdbc/JdbcTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/jdbc/JdbcTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/servlet/JstlServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/servlet/JstlServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/servlet/MyServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/servlet/MyServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/upload/UploadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/upload/UploadServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/ajax.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/ajax.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/download.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/download.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/index2.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/index2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/js/jquery-3.4.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/js/jquery-3.4.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/jstl.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/jstl.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-ningnan/web-example/web/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/spring-ningnan/web-example/web/upload.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="Jsp File" />
+        <option value="FxmlFile" />
+        <option value="Kotlin File" />
+        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\wrap" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../plugin/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="F:\plugin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-Dfile.encoding=UTF-8" />
+  </component>
+  <component name="ProjectId" id="1YRMX66y1kDe7tn2dB7zhg3jEky" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="MyBatisLogPluginindexNum" value="12" />
+    <property name="MyBatisLogPluginparameters" value="Parameters:" />
+    <property name="MyBatisLogPluginpreparing" value="Preparing:" />
+    <property name="MyBatisLogPluginrunning" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/spring-boot-yangkaizhen-example/chapter3/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-gupao/mic/src/main/java/com/pykj/gupao/mic" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.35430464" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.29325512" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\workspace\workspace-xiaoxiang\example-parent\spring-gupao\mic\src\main\java\com\pykj\gupao\mic" />
+      <recent name="F:\workspace\workspace-xiaoxiang\example-parent\spring-boot-yangkaizhen\chapter4\src\main\java\com\pykj\ykz\chapter4\aspect" />
+      <recent name="F:\workspace\workspace-xiaoxiang\example-parent\spring-gupao\design\src\main\java\com\pykj\design\patterns\factorypattern\simplefactorypattern\excellent" />
+      <recent name="F:\workspace\workspace-xiaoxiang\example-parent\spring-gupao\design\src\main\java\com\pykj\design\principle\compositereuse\example2" />
+      <recent name="F:\workspace\workspace-xiaoxiang\example-parent\spring-gupao\design\src\main\java\com\pykj\design\principle\lawofdemeter\example1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pykj.annotation.demo.annotation.configure.imports" />
+      <recent name="com.pykj.annotation.projectdemo.entity" />
+      <recent name="com.pykj.annotation.annntation" />
+      <recent name="com.pykj.annotation.demo.annotation.configure.componentscan" />
+      <recent name="com.pykj.v2.demo.aspect" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace\workspace-xiaoxiang\spring-example-parent\spring-gupao" />
+      <recent name="F:\workspace\workspace-xiaoxiang\spring-example-parent\spring-ningnan" />
+      <recent name="F:\github\spring-example-parent\spring-boot-yangkaizhen-example\chapter3\src\main\resources" />
+      <recent name="F:\github\spring-example-parent\spring-boot-yangkaizhen-example\chapter3\src\main\java\com\pykj\spring\boot\ykz\chapter3" />
+      <recent name="F:\github\spring-example-parent\spring-boot-yangkaizhen-example\chapter2\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Init">
+    <configuration name="Init" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pykj.gupao.application.reflection.demo6.Init" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pykj.gupao.application.reflection.demo6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pykj.gupao.application.reflection.demo3.Main" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pykj.gupao.application.reflection.demo3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pykj.gupao.application.reflection.demo2.Main" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pykj.gupao.application.reflection.demo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SingletonDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pykj.gupao.application.reflection.demo4.SingletonDemo" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pykj.gupao.application.reflection.demo4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pykj.gupao.application.reflection.demo5.Test" />
+      <module name="application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pykj.gupao.application.reflection.demo5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="example-parent" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="example-parent" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pykj.spring.boot.xmg.web.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chapter2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cpm.pykj.spring.boot.ykz.chapter2.Chapter2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chapter3" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pykj.spring.boot.ykz.chapter3.Chapter3Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootYangkaizhenChapter4Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chapter4" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.pykj.ykz.chapter4.SpringBootYangkaizhenChapter4Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.23" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.23" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER" value="false" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_23_spring-boot-parent" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="6463" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="spring-v2:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Spring Boot.Chapter3Application" />
+      <item itemvalue="Spring Boot.Chapter2Application" />
+      <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.SpringBootYangkaizhenChapter4Application" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.23" />
+      <item itemvalue="Application.SingletonDemo" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.Init" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Init" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.SingletonDemo" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringConfigurationTabSettings">
+    <option name="sortAlpha" value="true" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_INTERFACES,ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96264879-5c17-4f1d-89f8-f7896bed2a56" name="Default Changelist" comment="" />
+      <created>1582900989682</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582900989682</updated>
+      <workItem from="1582900991011" duration="8177000" />
+      <workItem from="1582909349288" duration="3328000" />
+      <workItem from="1582944310097" duration="18663000" />
+      <workItem from="1583400074508" duration="47295000" />
+      <workItem from="1583823534820" duration="26772000" />
+      <workItem from="1583941246684" duration="5596000" />
+      <workItem from="1584158509647" duration="865000" />
+      <workItem from="1584175454552" duration="7971000" />
+      <workItem from="1584195590218" duration="1725000" />
+      <workItem from="1584346018030" duration="12642000" />
+      <workItem from="1584571525187" duration="3713000" />
+      <workItem from="1584610201533" duration="11544000" />
+      <workItem from="1584852857764" duration="372000" />
+      <workItem from="1585202094658" duration="49080000" />
+      <workItem from="1585535288445" duration="23569000" />
+      <workItem from="1585664509312" duration="243000" />
+      <workItem from="1585664831784" duration="5819000" />
+      <workItem from="1585672400038" duration="18613000" />
+      <workItem from="1585756767105" duration="58301000" />
+      <workItem from="1586239600451" duration="6269000" />
+      <workItem from="1586273110006" duration="4067000" />
+      <workItem from="1586353535036" duration="964000" />
+      <workItem from="1586361121378" duration="587000" />
+      <workItem from="1586362769524" duration="215000" />
+      <workItem from="1586363019890" duration="15000" />
+      <workItem from="1586423552507" duration="68638000" />
+      <workItem from="1586854906159" duration="25341000" />
+      <workItem from="1587027425641" duration="6006000" />
+      <workItem from="1587045198373" duration="2224000" />
+      <workItem from="1587054127653" duration="7254000" />
+      <workItem from="1587147177483" duration="649000" />
+      <workItem from="1587196462498" duration="880000" />
+      <workItem from="1587198724679" duration="20000" />
+      <workItem from="1587219131579" duration="51356000" />
+      <workItem from="1587551736711" duration="1533000" />
+      <workItem from="1587608147724" duration="822000" />
+      <workItem from="1588121783960" duration="1189000" />
+      <workItem from="1589900216907" duration="2272000" />
+      <workItem from="1590220870958" duration="4960000" />
+      <workItem from="1590289816681" duration="849000" />
+      <workItem from="1591412587354" duration="7375000" />
+      <workItem from="1591618600629" duration="1010000" />
+      <workItem from="1592058620013" duration="1502000" />
+      <workItem from="1592099145890" duration="13553000" />
+      <workItem from="1592405116528" duration="999000" />
+      <workItem from="1592488428109" duration="109000" />
+      <workItem from="1592488631721" duration="621000" />
+      <workItem from="1592573981399" duration="1255000" />
+      <workItem from="1592576474162" duration="1190000" />
+      <workItem from="1592836511113" duration="3737000" />
+      <workItem from="1592923303562" duration="600000" />
+      <workItem from="1593013240533" duration="3045000" />
+      <workItem from="1593158825452" duration="15425000" />
+    </task>
+    <task id="LOCAL-00001" summary="spring-boot测试">
+      <created>1582944450090</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582944450090</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spring-boot测试">
+      <created>1582944941767</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582944941768</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spring-boot测试">
+      <created>1582989052509</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582989052509</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spring-mvc测试">
+      <created>1584242201980</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584242201980</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spring-mvc测试">
+      <created>1585279951009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585279951009</updated>
+    </task>
+    <task id="LOCAL-00006" summary="spring-mvc测试">
+      <created>1585322591719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1585322591719</updated>
+    </task>
+    <task id="LOCAL-00007" summary="MyBatis">
+      <created>1585665217382</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1585665217382</updated>
+    </task>
+    <task id="LOCAL-00008" summary="springboot">
+      <created>1586253469085</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586253469085</updated>
+    </task>
+    <task id="LOCAL-00009" summary="springIoC、Di">
+      <created>1586502787272</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586502787272</updated>
+    </task>
+    <task id="LOCAL-00010" summary="spring MVC">
+      <created>1586590602630</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586590602630</updated>
+    </task>
+    <task id="LOCAL-00011" summary="项目整理">
+      <created>1587054964683</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1587054964683</updated>
+    </task>
+    <task id="LOCAL-00012" summary="项目整理">
+      <created>1587055668205</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587055668205</updated>
+    </task>
+    <task id="LOCAL-00013" summary="项目整理">
+      <created>1587056059755</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1587056059755</updated>
+    </task>
+    <task id="LOCAL-00014" summary="项目整理">
+      <created>1590288465771</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1590288465771</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring-boot测试" />
+    <MESSAGE value="spring-mvc测试" />
+    <MESSAGE value="MyBatis" />
+    <MESSAGE value="springboot" />
+    <MESSAGE value="springIoC、Di" />
+    <MESSAGE value="spring MVC" />
+    <MESSAGE value="项目整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目整理" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="28" key="#Auto_Import" timestamp="1586533700972">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="28" key="#Auto_Import/0.0.1366.738@0.0.1366.738" timestamp="1586533700972" />
+    <state x="576" y="272" key="#Notifications" timestamp="1592099151812">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="546" y="231" key="#Notifications/0.0.1366.738@0.0.1366.738" timestamp="1587045116020" />
+    <state x="576" y="272" key="#Notifications/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1592099151812" />
+    <state x="275" y="28" key="#Plugins" timestamp="1586360832467">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="28" key="#Plugins/0.0.1366.738@0.0.1366.738" timestamp="1586360832467" />
+    <state x="290" y="0" key="#Project_Structure" timestamp="1593014536401">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="275" y="0" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1590288180888" />
+    <state x="290" y="0" key="#Project_Structure/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593014536401" />
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587488133370">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="137" y="25" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738@0.0.1366.738" timestamp="1587488133370" />
+    <state x="344" y="173" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585579191862">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="344" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585579191862" />
+    <state x="504" y="64" key="#com.intellij.ide.util.MemberChooser" timestamp="1593271336164">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="478" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1366.738@0.0.1366.738" timestamp="1591454084216" />
+    <state x="504" y="64" key="#com.intellij.ide.util.MemberChooser/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593271336164" />
+    <state x="389" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1586855145743">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="389" y="0" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.0.1366.738@0.0.1366.738" timestamp="1586855145743" />
+    <state x="253" y="277" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1586051216485">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="253" y="277" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1366.738@0.0.1366.738" timestamp="1586051216484" />
+    <state x="501" y="277" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1586050747482">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="501" y="277" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.0.1366.738@0.0.1366.738" timestamp="1586050747482" />
+    <state x="460" y="59" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1589901162642">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="460" y="59" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1366.738@0.0.1366.738" timestamp="1589901162642" />
+    <state x="506" y="68" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1587033930734">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="506" y="68" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1366.738@0.0.1366.738" timestamp="1587033930734" />
+    <state x="134" y="296" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590288013492">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="134" y="296" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.738@0.0.1366.738" timestamp="1590288013492" />
+    <state x="286" y="230" width="794" height="286" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586773080726">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="286" y="230" width="794" height="286" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.738@0.0.1366.738" timestamp="1586773080726" />
+    <state x="276" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586773764673">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="276" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.738@0.0.1366.738" timestamp="1586773764673" />
+    <state x="406" y="112" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1587024584967">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="406" y="112" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1366.738@0.0.1366.738" timestamp="1587024584967" />
+    <state x="691" y="153" width="490" height="585" key="#xdebugger.evaluate" timestamp="1587488311254">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="691" y="153" width="490" height="585" key="#xdebugger.evaluate/0.0.1366.738@0.0.1366.738" timestamp="1587488311254" />
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1590288456425">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1590288456425" />
+    <state width="602" height="517" key="DebuggerActiveHint" timestamp="1593267829385">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="571" height="438" key="DebuggerActiveHint/0.0.1366.738@0.0.1366.738" timestamp="1587493366704" />
+    <state width="602" height="517" key="DebuggerActiveHint/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593267829385" />
+    <state x="488" y="146" key="FileChooserDialogImpl" timestamp="1592576253851">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1587478803673" />
+    <state x="488" y="146" key="FileChooserDialogImpl/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1592576253851" />
+    <state x="480" y="270" key="Github.CreateGistDialog" timestamp="1586967074921">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="480" y="270" key="Github.CreateGistDialog/0.0.1366.738@0.0.1366.738" timestamp="1586967074921" />
+    <state width="1399" height="312" key="GridCell.Tab.0.bottom" timestamp="1593272545127">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="257" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1591454406687" />
+    <state width="1399" height="312" key="GridCell.Tab.0.bottom/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593272545127" />
+    <state width="1399" height="312" key="GridCell.Tab.0.center" timestamp="1593272545127">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="257" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1591454406687" />
+    <state width="1399" height="312" key="GridCell.Tab.0.center/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593272545127" />
+    <state width="1399" height="312" key="GridCell.Tab.0.left" timestamp="1593272545127">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="257" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1591454406687" />
+    <state width="1399" height="312" key="GridCell.Tab.0.left/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593272545127" />
+    <state width="1399" height="312" key="GridCell.Tab.0.right" timestamp="1593272545127">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="257" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1591454406687" />
+    <state width="1399" height="312" key="GridCell.Tab.0.right/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593272545127" />
+    <state width="1399" height="149" key="GridCell.Tab.1.bottom" timestamp="1593267843114">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="123" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1590288550151" />
+    <state width="1399" height="149" key="GridCell.Tab.1.bottom/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593267843114" />
+    <state width="1399" height="149" key="GridCell.Tab.1.center" timestamp="1593267843114">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="123" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1590288550151" />
+    <state width="1399" height="149" key="GridCell.Tab.1.center/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593267843114" />
+    <state width="1399" height="149" key="GridCell.Tab.1.left" timestamp="1593267843114">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="123" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1590288550151" />
+    <state width="1399" height="149" key="GridCell.Tab.1.left/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593267843114" />
+    <state width="1399" height="149" key="GridCell.Tab.1.right" timestamp="1593267843114">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state width="1325" height="123" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1590288550151" />
+    <state width="1399" height="149" key="GridCell.Tab.1.right/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593267843114" />
+    <state width="1325" height="161" key="GridCell.Tab.2.bottom" timestamp="1587542419980">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1325" height="161" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1587542419980" />
+    <state width="1325" height="161" key="GridCell.Tab.2.center" timestamp="1587542419980">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1325" height="161" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1587542419980" />
+    <state width="1325" height="161" key="GridCell.Tab.2.left" timestamp="1587542419980">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1325" height="161" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1587542419980" />
+    <state width="1325" height="161" key="GridCell.Tab.2.right" timestamp="1587542419980">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1325" height="161" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1587542419980" />
+    <state width="1058" height="217" key="GridCell.Tab.3.bottom" timestamp="1586782635983">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="217" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1586782635983" />
+    <state width="1058" height="217" key="GridCell.Tab.3.center" timestamp="1586782635982">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="217" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1586782635982" />
+    <state width="1058" height="217" key="GridCell.Tab.3.left" timestamp="1586782635981">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="217" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1586782635981" />
+    <state width="1058" height="217" key="GridCell.Tab.3.right" timestamp="1586782635982">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1058" height="217" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1586782635982" />
+    <state x="245" y="103" key="IDE.errors.dialog" timestamp="1587478130388">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="245" y="103" key="IDE.errors.dialog/0.0.1366.738@0.0.1366.738" timestamp="1587478130388" />
+    <state x="213" y="25" key="Maven.ArtifactSearchDialog" timestamp="1587490696270">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="213" y="25" key="Maven.ArtifactSearchDialog/0.0.1366.738@0.0.1366.738" timestamp="1587490696270" />
+    <state x="251" y="55" key="MergeDialog" timestamp="1590288520204">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="251" y="55" key="MergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1590288520204" />
+    <state x="561" y="236" width="488" height="265" key="MultipleFileMergeDialog" timestamp="1590288524268">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="561" y="236" width="488" height="265" key="MultipleFileMergeDialog/0.0.1366.738@0.0.1366.738" timestamp="1590288524268" />
+    <state x="226" y="57" key="NewModule_or_Project.wizard" timestamp="1587147234344">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="226" y="57" key="NewModule_or_Project.wizard/0.0.1366.738@0.0.1366.738" timestamp="1587147234344" />
+    <state x="312" y="81" key="RollbackChangesDialog" timestamp="1585588118307">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="312" y="81" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1585588118307" />
+    <state x="204" y="0" width="1172" height="738" key="SettingsEditor" timestamp="1593249496280">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="194" y="0" width="1172" height="738" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1590225350778" />
+    <state x="204" y="0" key="SettingsEditor/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593249496280" />
+    <state x="404" y="110" width="711" height="524" key="StructurePopup" timestamp="1586613410478">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="404" y="110" width="711" height="524" key="StructurePopup/0.0.1366.738@0.0.1366.738" timestamp="1586613410478" />
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2" timestamp="1590288468301">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="103" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1590288468301" />
+    <state x="477" y="148" key="chooseDestDirectoryDialog" timestamp="1586076806069">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="477" y="148" key="chooseDestDirectoryDialog/0.0.1366.738@0.0.1366.738" timestamp="1586076806069" />
+    <state x="337" y="194" key="com.intellij.ide.util.TipDialog" timestamp="1586363019221">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="337" y="194" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1586363019221" />
+    <state x="299" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586274558935">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="299" y="6" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1586274558935" />
+    <state x="451" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586081170914">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="451" y="287" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1586081170914" />
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1586619290660">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1586619290660" />
+    <state x="351" y="111" width="911" height="592" key="find.popup" timestamp="1587491485543">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="351" y="111" width="911" height="592" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1587491485543" />
+    <state x="297" y="157" key="git4idea.merge.GitPullDialog" timestamp="1587107632033">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="297" y="157" key="git4idea.merge.GitPullDialog/0.0.1366.738@0.0.1366.738" timestamp="1587107632033" />
+    <state x="0" y="94" width="1366" height="563" key="new project wizard" timestamp="1592576256389">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="0" y="102" width="1366" height="563" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1590287843450" />
+    <state x="0" y="94" key="new project wizard/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1592576256389" />
+    <state x="339" y="165" width="672" height="677" key="run.anything.popup" timestamp="1587478808615">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" width="672" height="677" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1587478808615" />
+    <state x="365" y="70" width="709" height="800" key="search.everywhere.popup" timestamp="1593271629477">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1591431429315" />
+    <state x="365" y="70" width="709" height="800" key="search.everywhere.popup/1440.129.1366.738/0.0.1440.870@0.0.1440.870" timestamp="1593271629477" />
+    <state x="113" y="54" key="spring file set editor" timestamp="1586081657984">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="113" y="54" key="spring file set editor/0.0.1366.738@0.0.1366.738" timestamp="1586081657984" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-example-one/src/main/java/com/pykj/example/one/web/IndexController.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-example-one/src/test/java/com/pykj/example/one/web/HelloTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-example-one/src/test/java/com/pykj/example/one/web/HelloTest.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/download/DownloadServlet.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/web-example/src/com/pykj/tomcat/filter/TestFilter.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Integer.java</url>
+          <line>801</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/lang/Integer.java</url>
+          <line>787</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/ioc/ClassPathXmlApplicationContext.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-example/src/test/java/com/pykj/spring/StudentTest.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-example/src/test/java/com/pykj/spring/StudentTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/MyInvocationHandler.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-example/src/main/java/com/pykj/spring/aop/MyInvocationHandler.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ViewHandler.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/ViewHandler.java</url>
+          <line>127</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/converter/DataConverter.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/converter/StudentConverter.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/FileHandler.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-ningnan/spring-mvc-example/src/main/java/com/pykj/springmvc/controller/TagHandler.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/test/java/Test.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>120</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/properties/DataBaseProperties.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/properties/DataBaseProperties.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/datasource/DataSources.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter3/src/main/java/com/pykj/spring/boot/ykz/chapter3/condition/DatabaseConditional.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>220</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>177</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v1/src/main/java/com/pykj/v1/mvcframework/servlet/PYDispatchServlet.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PYHandlerAdapter.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/webmvc/servlet/PyDispatcherServlet.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/context/PYApplicationContext.java</url>
+          <line>155</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/support/PYAdvisedSupport.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/support/PYAdvisedSupport.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/PYJdkDynamicAopProxy.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-v2/src/main/java/com/pykj/v2/spring/framework/aop/PYJdkDynamicAopProxy.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/LinuxConditional.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/configure/conditional/WinConditional.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/spring-annotation/src/main/java/com/pykj/annotation/demo/annotation/injection/qualifier/MyTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/ProxyBean.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/intercept/ProxyBean.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/test/TestProxy.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/service/impl/UserServiceImpl.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/controller/UserController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/controller/UserController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>112</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>102</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/MyAspect.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-boot-yangkaizhen/chapter4/src/main/java/com/pykj/ykz/chapter4/aspect/controller/UserController.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/concurrency/src/main/java/com/pykj/gupao/concurrency/chapter3/VolatileDemo.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo3/Main.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo3/Main.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo4/Lazy.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo4/SingletonDemo.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/spring-gupao/application/src/main/java/com/pykj/gupao/application/reflection/demo4/Lazy.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="com.pykj.annotation.project.dao.MyDao" fieldName="flag" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

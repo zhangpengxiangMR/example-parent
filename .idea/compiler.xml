@@ -12,6 +12,7 @@
         <module name="model" />
         <module name="spring-example" />
         <module name="spring-annotation" />
+        <module name="application" />
         <module name="ssm-example" />
         <module name="chapter4" />
         <module name="persistence" />
@@ -26,13 +27,11 @@
         <module name="design" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mic" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="application" options="" />
       <module name="chapter1" options="-parameters" />
       <module name="chapter2" options="-parameters" />
       <module name="chapter3" options="-parameters" />
@@ -41,7 +40,6 @@
       <module name="design" options="" />
       <module name="example-parent" options="" />
       <module name="first-spring-boot-app" options="" />
-      <module name="mic" options="" />
       <module name="model" options="-parameters" />
       <module name="mybatis-example" options="" />
       <module name="persistence" options="-parameters" />

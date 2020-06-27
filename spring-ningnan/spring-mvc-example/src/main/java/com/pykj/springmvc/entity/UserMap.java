@@ -7,6 +7,6 @@ import java.util.Map;
 @Data
 public class UserMap {
 
-    private Map<String,Users> users;
+    private Map<String, Users> users;
 
 }

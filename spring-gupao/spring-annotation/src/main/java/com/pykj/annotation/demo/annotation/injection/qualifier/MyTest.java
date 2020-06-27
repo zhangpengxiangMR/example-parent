@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MyTest {
 
     @Test
-    public void test(){
+    public void test() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         MyService bean = context.getBean(MyService.class);

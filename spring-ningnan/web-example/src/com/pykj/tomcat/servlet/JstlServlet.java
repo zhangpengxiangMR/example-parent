@@ -17,10 +17,10 @@ public class JstlServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Users> usersList = new ArrayList<>();
-        usersList.add(new Users("张鹏祥",18));
-        usersList.add(new Users("熊珍珍",18));
-        req.setAttribute("usersList",usersList);
-        req.getRequestDispatcher("jstl.jsp").forward(req,resp);
+        usersList.add(new Users("张鹏祥", 18));
+        usersList.add(new Users("熊珍珍", 18));
+        req.setAttribute("usersList", usersList);
+        req.getRequestDispatcher("jstl.jsp").forward(req, resp);
     }
 
     @Override

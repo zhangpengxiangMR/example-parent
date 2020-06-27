@@ -4,8 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @SpringBootApplication
- * 等价于
+ * @SpringBootApplication 等价于
  * @SpringBootConfiguration
  * @EnableAutoConfiguration
  * @ComponentScan

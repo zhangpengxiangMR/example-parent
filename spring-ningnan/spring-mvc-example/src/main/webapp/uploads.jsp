@@ -14,14 +14,14 @@
 </head>
 <body>
 
-    <form action="/file/uploads" method="post" enctype="multipart/form-data">
-        file1:<input type="file" name="imgs"/><br/>
-        file2:<input type="file" name="imgs"/><br/>
-        file3:<input type="file" name="imgs"/><br/>
-        <input type="submit" value="上传"/>
-    </form>
-    <c:forEach items="${files}" var="file">
-        <img src="${file}" width="300px">
-    </c:forEach>
+<form action="/file/uploads" method="post" enctype="multipart/form-data">
+    file1:<input type="file" name="imgs"/><br/>
+    file2:<input type="file" name="imgs"/><br/>
+    file3:<input type="file" name="imgs"/><br/>
+    <input type="submit" value="上传"/>
+</form>
+<c:forEach items="${files}" var="file">
+    <img src="${file}" width="300px">
+</c:forEach>
 </body>
 </html>

@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyPerson {
 
-    private String name ;
+    private String name;
 
-    private int age ;
+    private int age;
 
     public MyPerson() {
     }

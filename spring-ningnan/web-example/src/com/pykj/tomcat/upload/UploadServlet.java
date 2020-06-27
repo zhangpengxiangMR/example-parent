@@ -46,36 +46,36 @@ public class UploadServlet extends HttpServlet {
             ServletFileUpload servletFileUpload = new ServletFileUpload(diskFileItemFactory);
             List<FileItem> fileItemList = servletFileUpload.parseRequest(req);
             for (FileItem fileItem : fileItemList) {
-               if(fileItem.isFormField()) {
-                   String name = fileItem.getFieldName();
-                   String value = fileItem.getString("UTF-8");
-                   System.out.println(name +"-" + value);
-               }else{
-                   String fileName = fileItem.getName();
-                   inputStream = fileItem.getInputStream();
-                   String path = req.getServletContext().getRealPath("/file/" + fileName);
-                   outputStream = new FileOutputStream(path);
-                   byte[] bytes = new byte[1024];
-                   int count = inputStream.read(bytes);
-                   while (count != -1) {
-                       outputStream.write(bytes,0,count);
-                       outputStream.flush();
-                       count = inputStream.read(bytes);
-                   }
-               }
+                if (fileItem.isFormField()) {
+                    String name = fileItem.getFieldName();
+                    String value = fileItem.getString("UTF-8");
+                    System.out.println(name + "-" + value);
+                } else {
+                    String fileName = fileItem.getName();
+                    inputStream = fileItem.getInputStream();
+                    String path = req.getServletContext().getRealPath("/file/" + fileName);
+                    outputStream = new FileOutputStream(path);
+                    byte[] bytes = new byte[1024];
+                    int count = inputStream.read(bytes);
+                    while (count != -1) {
+                        outputStream.write(bytes, 0, count);
+                        outputStream.flush();
+                        count = inputStream.read(bytes);
+                    }
+                }
             }
         } catch (FileUploadException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
-                if(inputStream != null) {
+                if (inputStream != null) {
                     inputStream.close();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
             try {
-                if(outputStream != null) {
+                if (outputStream != null) {
                     outputStream.close();
                 }
             } catch (IOException e) {

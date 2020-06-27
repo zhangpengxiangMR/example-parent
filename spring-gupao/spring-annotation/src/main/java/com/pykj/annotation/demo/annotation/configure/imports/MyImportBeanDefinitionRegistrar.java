@@ -18,9 +18,9 @@ public class MyImportBeanDefinitionRegistrar implements ImportBeanDefinitionRegi
         //如果有com.pykj.annotation.project.entity.Member\com.pykj.annotation.project.entity.Company这两个类就加载User
         boolean member = registry.containsBeanDefinition("com.pykj.annotation.project.entity.MyMember");
         boolean company = registry.containsBeanDefinition("com.pykj.annotation.project.entity.MyCompany");
-        if(member && company) {
+        if (member && company) {
             BeanDefinition beanDefinition = new RootBeanDefinition(MyUser.class);
-            registry.registerBeanDefinition("myUser",beanDefinition);
+            registry.registerBeanDefinition("myUser", beanDefinition);
         }
     }
 }

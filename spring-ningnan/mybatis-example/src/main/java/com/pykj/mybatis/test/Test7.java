@@ -20,12 +20,12 @@ public class Test7 {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         AccountRepository accountRepository = sqlSession.getMapper(AccountRepository.class);
         Account account = accountRepository.findById(1);
-        System.out.println("第一次查询：" +account);
+        System.out.println("第一次查询：" + account);
         sqlSession.close();
         sqlSession = sqlSessionFactory.openSession();
         accountRepository = sqlSession.getMapper(AccountRepository.class);
         Account account1 = accountRepository.findById(1);
-        System.out.println("第二次查询：" +account1);
+        System.out.println("第二次查询：" + account1);
     }
 
 }

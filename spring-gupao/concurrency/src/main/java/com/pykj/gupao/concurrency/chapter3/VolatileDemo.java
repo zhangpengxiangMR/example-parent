@@ -14,7 +14,7 @@ public class VolatileDemo {
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("主线程开始：" + Thread.currentThread().getName());
-        Thread thread = new Thread(()->{
+        Thread thread = new Thread(() -> {
             int i = 0;
             while (!stop) {
                 i++;

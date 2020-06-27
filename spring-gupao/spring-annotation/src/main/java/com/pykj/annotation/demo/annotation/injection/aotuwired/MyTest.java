@@ -11,7 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MyTest {
 
     @Test
-    public void test(){
+    public void test() {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         MyController controller = context.getBean(MyController.class);
@@ -20,8 +20,6 @@ public class MyTest {
 
         service.print();
         System.out.println(dao);
-
-
 
 
     }

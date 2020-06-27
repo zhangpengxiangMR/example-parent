@@ -27,7 +27,7 @@ public class UserController {
     }*/
 
     @RequestMapping("/print")
-    public User printUser(Long id,String userName,String note){
+    public User printUser(Long id, String userName, String note) {
         User user = new User();
         user.setId(id);
         user.setUserName(userName);
@@ -37,14 +37,14 @@ public class UserController {
     }
 
     @RequestMapping("/vp")
-    public Person validateAndPrint(Long id, String userName, String note){
+    public Person validateAndPrint(Long id, String userName, String note) {
         User user = new User();
         user.setId(id);
         user.setUserName(userName);
         user.setNote(note);
-        UserValidator userValidator = (UserValidator)userService;
+        UserValidator userValidator = (UserValidator) userService;
         Person person = new Person();
-        if(userValidator.validate(user)){
+        if (userValidator.validate(user)) {
             person = userService.printUser(user);
         }
         return person;

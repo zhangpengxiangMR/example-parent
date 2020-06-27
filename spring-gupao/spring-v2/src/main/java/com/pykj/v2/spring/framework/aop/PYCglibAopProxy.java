@@ -5,7 +5,7 @@ package com.pykj.v2.spring.framework.aop;
  * @author: zhangpengxiang
  * @time: 2020/4/22 18:40
  */
-public class PYCglibAopProxy implements PYAopProxy{
+public class PYCglibAopProxy implements PYAopProxy {
     @Override
     public Object getProxy() {
         return null;

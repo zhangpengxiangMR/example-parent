@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Import;
  * @time: 2020/4/15 11:50
  */
 @Configuration
-@Import(value = {MyCat.class, MyImportSelector.class,MyImportBeanDefinitionRegistrar.class})
+@Import(value = {MyCat.class, MyImportSelector.class, MyImportBeanDefinitionRegistrar.class})
 public class MyConfig {
 
     /**
@@ -20,15 +20,15 @@ public class MyConfig {
      * 1、@Bean：直接导入单个Bean
      * 2、@ComponentScan：默认扫描(@Controller@Service@Repostory@Component)这几种注解
      * 3、Import：快速给容器导入Bean的方式
-     *      a、通过@Import直接导入
-     *      b、实现ImportSelector，自定义规则实现
-     *      c、实现ImportBeanDefinitionRegistrar，获得BeanDefinitionRegistry可以手动直接往IoC容器塞
+     * a、通过@Import直接导入
+     * b、实现ImportSelector，自定义规则实现
+     * c、实现ImportBeanDefinitionRegistrar，获得BeanDefinitionRegistry可以手动直接往IoC容器塞
      * 4、FactoryBean把需要注册的对象封装为FactoryBean
-     *      a、FactoryBean负责将Bean注册到IoC容器中
-     *      b、BeanFactory负责从IoC容器中获得Bean对象
+     * a、FactoryBean负责将Bean注册到IoC容器中
+     * b、BeanFactory负责从IoC容器中获得Bean对象
      */
     @Bean
-    public MyFactoryBean monkey(){
+    public MyFactoryBean monkey() {
         return new MyFactoryBean();
     }
 

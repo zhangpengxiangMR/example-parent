@@ -13,6 +13,6 @@ public class MyImportSelector implements ImportSelector {
     public String[] selectImports(AnnotationMetadata importingClassMetadata) {
 
         return new String[]{"com.pykj.annotation.project.entity.MyMember",
-                            "com.pykj.annotation.project.entity.MyCompany"};
+                "com.pykj.annotation.project.entity.MyCompany"};
     }
 }

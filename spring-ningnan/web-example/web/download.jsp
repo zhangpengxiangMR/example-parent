@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <a href="/download">下载</a>
+<a href="/download">下载</a>
 
 </body>
 </html>

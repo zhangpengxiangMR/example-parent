@@ -8,6 +8,7 @@ package com.pykj.design.principle.singleresponsibility.example3;
 public interface ICourseInfo {
 
     String getCourseName();
+
     //获得视频流
     byte[] getCourseVideo();
 }

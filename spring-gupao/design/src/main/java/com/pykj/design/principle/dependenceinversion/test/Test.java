@@ -13,8 +13,7 @@ import com.pykj.design.principle.dependenceinversion.example.XiaoXiang;
 public class Test {
 
     /**
-     * @description
-     * 编写Tom类，把学习的课程创建在Tom类中，如果在进行扩展需要改动的比较多，也不符合开闭原则。
+     * @description 编写Tom类，把学习的课程创建在Tom类中，如果在进行扩展需要改动的比较多，也不符合开闭原则。
      * 建立ICourse接口，把公共进行提炼，创建study()方法，JavaCourse课程和PythonCourse课程分别实现Icourse，
      * xiaoxiang类只需要接收ICourse进行调用即可，在添加GoCourse课程，只需要添加一个类，传入xiaoxiang即可。
      */

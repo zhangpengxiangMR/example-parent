@@ -13,7 +13,7 @@ public interface IAnimal {
     void fly();
 
     /**
-     *  游泳
+     * 游泳
      */
     void swim();
 
